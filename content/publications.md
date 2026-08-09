@@ -69,6 +69,9 @@ sections:
             <div class="t">Towards Abductive Latent Explanations</div>
             <div class="a">Jules Soria, Zakaria Chihani, Julien Girard-Satabin, Alban Grastien, Romain Xu-Darme, Daniela Cancila</div>
             <div class="v">TRUST-AI workshop at ECAI 2025 &middot; Bologna, Italy &middot; CEUR-WS vol. 4132, 188–199</div>
+            <div class="l">
+              <a href="https://ceur-ws.org/Vol-4132/short34.pdf">pdf</a>
+            </div>
           </div>
         </div>
 

@@ -6,14 +6,14 @@ type: landing
 design:
   spacing: '3rem'
 
-# Venues come from the CSI 2026 slides (13/07/2026), "Présentations orales".
-# Dates are cross-referenced against the slide decks and mission records.
-# TODO (Jules): two decks on disk still have no venue —
+# Every title and venue below is read off the actual slide deck. Do not add an entry
+# whose title has not been read from its deck.
+# Venues cross-referenced against the CSI 2026 slides (13/07/2026), "Présentations orales".
+# TODO (Jules): two decks on disk still have no venue, so they are NOT listed —
 #   ~/Documents/0_PRESENTATIONS/3_SORIA.pdf                  (Nov 2025)
 #   ~/Documents/0_PRESENTATIONS/LSLauVert25_Presentation.pdf (Dec 2025)
 # Both are the "Formal Abductive Latent Explanations" deck. Likely candidates from the CSI
 # list are GT ECLAIRE, GT EXPLICON, GT XAI4U (Toulouse 2025), P-AI FM or PEPR SAIF.
-# Also please confirm the two Journée des thèses titles, which I inferred.
 
 sections:
   - block: markdown
@@ -68,20 +68,20 @@ sections:
         </div>
 
         <div class="e">
-          <div class="t">Abductive Latent Explanations</div>
-          <div class="v">Journée des thèses, CEA List &middot; Palaiseau &middot; 2025</div>
+          <div class="t">Explications de confiance pour l'intelligence artificielle</div>
+          <div class="v">Journée des Thèses DILS, CEA List &middot; Palaiseau &middot; 20 &amp; 27 June 2025</div>
         </div>
 
         <h3 class="yr">2024</h3>
 
         <div class="e">
           <div class="t">Crafting Adversarial Examples Using Linear Regions</div>
-          <div class="v">Workshop on the foundations of AI &middot; June 2024</div>
+          <div class="v">Workshop Fondements Mathématiques de l'IA &middot; 17 June 2024</div>
         </div>
 
         <div class="e">
-          <div class="t">Adversarial robustness of prototype-based networks</div>
-          <div class="v">Journée des thèses, CEA List &middot; Palaiseau &middot; 2024</div>
+          <div class="t">Explications de confiance pour l'intelligence artificielle</div>
+          <div class="v">Journée des Thèses DILS, CEA List &middot; Palaiseau &middot; 27–28 June 2024</div>
         </div>
 
         <div class="note">
