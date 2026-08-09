@@ -28,7 +28,7 @@ project pages.
 | Site URL | `config/_default/hugo.yaml` |
 | Navigation bar | `config/_default/menus.yaml` |
 | Profile photo | `assets/media/authors/me.png` |
-| Publication thumbnails | `static/media/` |
+| Publication icons | inline emoji in `content/publications.md`, matching each paper's project-page favicon (🍺 formal-ale, 📐 beyond-l2) |
 
 ## Theme overrides in `layouts/`
 

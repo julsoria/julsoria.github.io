@@ -12,9 +12,13 @@ sections:
       title: ''
       text: |-
         <style>
-        .publist .pub{display:flex;gap:1.5rem;align-items:flex-start;margin:0 0 2rem}
-        .publist .pub img{width:210px;flex:0 0 210px;margin:.25rem 0 0;border-radius:8px;
-          border:1px solid rgba(120,120,120,.28);background:#fff}
+        .publist .pub{display:flex;gap:1.25rem;align-items:flex-start;margin:0 0 1.75rem}
+        /* Emoji match the favicons on each paper's project page: 🍺 formal-ale, 📐 beyond-l2.
+           Explicit emoji font stack so they render in colour rather than as glyph outlines. */
+        .publist .icon{flex:0 0 3rem;width:3rem;font-size:2.25rem;line-height:1.2;
+          text-align:center;user-select:none;
+          font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",
+            "Twemoji Mozilla",sans-serif}
         .publist .meta{flex:1 1 auto;min-width:0}
         .publist .t{font-weight:700;line-height:1.35;margin-bottom:.15rem}
         .publist .a{font-size:.94em;opacity:.85;margin-bottom:.1rem}
@@ -24,8 +28,7 @@ sections:
         .publist h3{margin:0 0 1.25rem;padding-bottom:.35rem;
           border-bottom:1px solid rgba(120,120,120,.25)}
         .publist .yr{margin-top:2.5rem}
-        @media(max-width:640px){.publist .pub{flex-direction:column;gap:.75rem}
-          .publist .pub img{width:100%;flex:none}}
+        @media(max-width:640px){.publist .icon{flex-basis:2.25rem;width:2.25rem;font-size:1.6rem}}
         </style>
 
         <div class="publist">
@@ -35,7 +38,7 @@ sections:
         <h3>2026</h3>
 
         <div class="pub">
-          <img src="/media/beyond-l2-hypersphere.png" alt="Approximating the intersection of two hyperspherical caps in latent space">
+          <div class="icon" aria-hidden="true">📐</div>
           <div class="meta">
             <div class="t">Beyond $L_2$: Generalizing Abductive Latent Explanations to Diverse Prototype-Based Architectures</div>
             <div class="a">Jules Soria, Alban Grastien, Romain Xu-Darme, Julien Girard-Satabin, Zakaria Chihani, Daniela Cancila</div>
@@ -48,7 +51,7 @@ sections:
         </div>
 
         <div class="pub">
-          <img src="/media/ale-teaser.png" alt="An abductive latent explanation for a ProtoPNet prediction">
+          <div class="icon" aria-hidden="true">🍺</div>
           <div class="meta">
             <div class="t">Formal Abductive Latent Explanations for Prototype-Based Networks</div>
             <div class="a">Jules Soria, Zakaria Chihani, Julien Girard-Satabin, Alban Grastien, Romain Xu-Darme, Daniela Cancila</div>
@@ -65,6 +68,7 @@ sections:
         <h3 class="yr">2025</h3>
 
         <div class="pub">
+          <div class="icon" aria-hidden="true"></div>
           <div class="meta">
             <div class="t">Towards Abductive Latent Explanations</div>
             <div class="a">Jules Soria, Zakaria Chihani, Julien Girard-Satabin, Alban Grastien, Romain Xu-Darme, Daniela Cancila</div>
@@ -78,6 +82,7 @@ sections:
         <h3 class="yr">2024</h3>
 
         <div class="pub">
+          <div class="icon" aria-hidden="true"></div>
           <div class="meta">
             <div class="t">YAGO 4.5: A Large and Clean Knowledge Base with a Rich Taxonomy</div>
             <div class="a">Fabian M. Suchanek, Mehwish Alam, Thomas Bonald, Lihu Chen, Pierre-Henri Paris, Jules Soria</div>
