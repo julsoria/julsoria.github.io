@@ -23,7 +23,7 @@ bio: |
 
 affiliations:
   - name: Université Paris-Saclay, CEA, List
-    url: https://list.cea.fr/
+    url: https://list.cea.fr/en/
 
 links:
   - icon: at-symbol
@@ -43,9 +43,13 @@ interests:
   - Interpretable Machine Learning
   - Trustworthy AI
 
+# `start`/`end` drive the timeline on the Experience page (formatted via `date_format`).
+# `year` is what the homepage biography block shows — without it, that block prints the
+# raw ISO dates.
 education:
   - degree: PhD in Computer Science, Data and AI
     institution: Université Paris-Saclay — CEA List (ED STIC)
+    year: 2023 – present
     start: 2023-11-01
     summary: |
       Thesis: *Trustworthy explanations for artificial intelligence*.
@@ -53,14 +57,17 @@ education:
       Romain Xu-Darme.
   - degree: MSc Data & Artificial Intelligence
     institution: Institut Polytechnique de Paris
+    year: 2022 – 2023
     start: 2022-09-01
     end: 2023-10-31
   - degree: Diplôme d'Ingénieur (ISMIN)
     institution: Mines Saint-Étienne
+    year: 2020 – 2023
     start: 2020-09-01
     end: 2023-06-30
   - degree: Classe préparatoire MPSI / MP*
     institution: Lycée Janson de Sailly, Paris
+    year: 2018 – 2020
     start: 2018-09-01
     end: 2020-06-30
 

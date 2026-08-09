@@ -9,8 +9,10 @@ authors:
   - Zakaria Chihani
   - Daniela Cancila
 
+# `date` is the conference date; `publishDate` is when this page goes live. Keep
+# `publishDate` in the past, otherwise Hugo treats the page as future content.
 date: '2026-09-07T00:00:00Z'
-publishDate: '2026-09-07T00:00:00Z'
+publishDate: '2026-06-01T00:00:00Z'
 
 publication_types: ['paper-conference']
 

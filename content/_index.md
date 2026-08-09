@@ -24,7 +24,7 @@ sections:
     design:
       background:
         gradient_mesh:
-          enable: true
+          enable: false
       name:
         size: md # Options: xs, sm, md, lg (default), xl
       avatar:

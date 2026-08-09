@@ -33,6 +33,9 @@ cascade:
 
 build:
   writeStats: true
+# Render accepted-but-not-yet-presented papers (conference date in the future)
+# instead of silently dropping them from the site.
+buildFuture: true
 enableGitInfo: false
 summaryLength: 30
 pagination:
