@@ -6,14 +6,14 @@ type: landing
 design:
   spacing: '3rem'
 
-# NOTE (Jules): three more decks exist on disk that I could not confidently map to a
-# venue, so I left them out rather than guess. Add them if they were talks:
-#   ~/Documents/0_PRESENTATIONS/3_SORIA.pdf                       (Nov 2025)
-#   ~/Documents/0_PRESENTATIONS/LSLauVert25_Presentation.pdf      (Dec 2025)
-#   ~/Documents/0_PRESENTATIONS/NeuroSym4MLLM_EXPLAINAI_SORIA.pdf (Jun 2026)
-# All three are the "Formal Abductive Latent Explanations" deck. Also please confirm the
-# venue name for "Workshop on the foundations of AI" (Jun 2024) and the two Journée des
-# thèses titles, which I inferred rather than read off the slides.
+# Venues come from the CSI 2026 slides (13/07/2026), "Présentations orales".
+# Dates are cross-referenced against the slide decks and mission records.
+# TODO (Jules): two decks on disk still have no venue —
+#   ~/Documents/0_PRESENTATIONS/3_SORIA.pdf                  (Nov 2025)
+#   ~/Documents/0_PRESENTATIONS/LSLauVert25_Presentation.pdf (Dec 2025)
+# Both are the "Formal Abductive Latent Explanations" deck. Likely candidates from the CSI
+# list are GT ECLAIRE, GT EXPLICON, GT XAI4U (Toulouse 2025), P-AI FM or PEPR SAIF.
+# Also please confirm the two Journée des thèses titles, which I inferred.
 
 sections:
   - block: markdown
@@ -21,12 +21,14 @@ sections:
       title: ''
       text: |-
         <style>
-        .entries .e{margin:0 0 1.5rem}
+        .entries .e{margin:0 0 1.4rem}
         .entries .t{font-weight:700;line-height:1.35;margin-bottom:.15rem}
         .entries .v{font-size:.94em;opacity:.85}
         .entries h3{margin:0 0 1.25rem;padding-bottom:.35rem;
           border-bottom:1px solid rgba(120,120,120,.25)}
         .entries .yr{margin-top:2.5rem}
+        .entries .note{font-size:.94em;opacity:.85;margin-top:1.75rem;
+          padding-top:1rem;border-top:1px solid rgba(120,120,120,.2)}
         </style>
 
         <div class="entries">
@@ -35,12 +37,22 @@ sections:
 
         <div class="e">
           <div class="t">Formal Abductive Latent Explanations for Prototype-Based Networks</div>
-          <div class="v">Normastic seminar on eXplainable AI &middot; Rouen &middot; May 2026</div>
+          <div class="v">CAp &amp; RFIAP 2026 &middot; Montpellier &middot; July 2026</div>
+        </div>
+
+        <div class="e">
+          <div class="t">Formal Abductive Latent Explanations for Prototype-Based Networks</div>
+          <div class="v">NeuroSym4MLLM × EXPLAIN'AI workshop &middot; June 2026</div>
+        </div>
+
+        <div class="e">
+          <div class="t">Formal Abductive Latent Explanations for Prototype-Based Networks</div>
+          <div class="v">NormaSTIC seminar on explainability &middot; Rouen &middot; May 2026</div>
         </div>
 
         <div class="e">
           <div class="t">Formal Abductive Latent Explanations for Prototype-Based Networks <em>(poster)</em></div>
-          <div class="v">CEA List Tech Days &middot; Palaiseau &middot; May 2026</div>
+          <div class="v">CEA List Days &middot; Palaiseau &middot; May 2026</div>
         </div>
 
         <div class="e">
@@ -70,6 +82,13 @@ sections:
         <div class="e">
           <div class="t">Adversarial robustness of prototype-based networks</div>
           <div class="v">Journée des thèses, CEA List &middot; Palaiseau &middot; 2024</div>
+        </div>
+
+        <div class="note">
+          This work has also been presented at the <strong>P-AI FM</strong> workshop, at the
+          <strong>PEPR SAIF</strong> project meetings, and to the French working groups
+          <strong>GT ECLAIRE</strong>, <strong>GT EXPLICON</strong> and
+          <strong>GT XAI4U</strong> (Calais 2024, Toulouse 2025).
         </div>
 
         </div>

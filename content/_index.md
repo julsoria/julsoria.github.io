@@ -6,7 +6,10 @@ date: 2026-08-09
 type: landing
 
 sections:
-  - block: resume-biography-3
+  # `resume-biography` (not `-3`) renders avatar, name, role, affiliation, links and bio
+  # but NOT education — which lives on /cv/ instead. It also drops the interests list,
+  # so that is re-added as the compact markdown block below.
+  - block: resume-biography
     content:
       # Choose a user profile to display (a folder name within `data/authors/`)
       username: me
@@ -34,6 +37,20 @@ sections:
         shape: circle
 
   - block: markdown
+    id: interests
+    content:
+      title: ''
+      text: |-
+        <p style="text-align:center;opacity:.85">
+          <strong>Research interests</strong> &nbsp;·&nbsp; Formal explainable AI &nbsp;·&nbsp;
+          Abductive explanations &nbsp;·&nbsp; Case-based reasoning networks &nbsp;·&nbsp;
+          Interpretable machine learning &nbsp;·&nbsp; Trustworthy AI
+        </p>
+    design:
+      width: wide
+      columns: '1'
+
+  - block: markdown
     id: postdoc
     content:
       title: ''
@@ -57,7 +74,11 @@ sections:
       text: |-
         **Sep 2026** — ⭐ *Beyond $L_2$* to be presented at **ECML PKDD 2026**, Naples.
 
-        **May 2026** — Talk at the **Normastic** seminar on XAI, Rouen · poster at **CEA List Tech Days**.
+        **Jul 2026** — Talk at **CAp & RFIAP 2026**, Montpellier.
+
+        **Jun 2026** — Talk at the **NeuroSym4MLLM × EXPLAIN'AI** workshop.
+
+        **May 2026** — Talk at the **NormaSTIC** seminar on explainability, Rouen · poster at **CEA List Days**.
 
         **Jan 2026** — ⭐ Presented *Formal Abductive Latent Explanations* at **AAAI 2026**, Singapore.
 
