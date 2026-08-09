@@ -72,3 +72,17 @@ are always correct.
 
 `.github/workflows/deploy.yml` publishes via `actions/deploy-pages`. This requires
 **Settings → Pages → Source = GitHub Actions** (one-time, in the repo settings).
+
+Three workflows remain: `build.yml`, `deploy.yml`, and `upgrade.yml` (manual only).
+
+Two upstream workflows were removed on purpose:
+
+- **`import-publications.yml`** — it watched `publications.bib` and opened a PR generating
+  one `content/publications/<slug>/index.md` page per entry. That is exactly the per-paper
+  detail-page structure this site does not want, since each paper has its own project site.
+  `publications.bib` is kept at the root as a citation reference only; nothing builds from it.
+- **`internal-readme-news.yml`** — a bot that rewrote this README weekly with HugoBlox
+  marketing.
+
+`upgrade.yml` kept its manual trigger but lost its weekly cron, because an unattended theme
+upgrade would move the module out from under the two overrides in `layouts/`.

@@ -11,9 +11,11 @@ on:
         options:
         - Stable
         - Beta (Preview)
-  schedule:
-    # Run at 05:00 on Monday
-    - cron: '0 5 * * 1'
+  # Weekly cron removed deliberately. This site shadows two files from the upstream
+  # `blox` module (layouts/_partials/functions/build_links.html and
+  # layouts/_partials/hbx/blocks/markdown/block.html). An unattended upgrade would move
+  # the module out from under those copies. Run this manually, then re-diff both
+  # overrides against the new module version — see README.
 
 permissions:
   contents: write
