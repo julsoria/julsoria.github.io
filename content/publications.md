@@ -19,6 +19,9 @@ sections:
           text-align:center;user-select:none;
           font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",
             "Twemoji Mozilla",sans-serif}
+        /* margin:0 is required — Tailwind `prose` gives img a 2em top margin, which pushes
+           the logo down to the bottom of the entry instead of aligning it with the title. */
+        .publist .icon img{width:100%;height:auto;display:block;margin:0}
         .publist .meta{flex:1 1 auto;min-width:0}
         .publist .t{font-weight:700;line-height:1.35;margin-bottom:.15rem}
         .publist .a{font-size:.94em;opacity:.85;margin-bottom:.1rem}
@@ -82,7 +85,7 @@ sections:
         <h3 class="yr">2024</h3>
 
         <div class="pub">
-          <div class="icon" aria-hidden="true"></div>
+          <div class="icon"><img src="/media/yago-mark.png" alt="YAGO project logo" loading="lazy"></div>
           <div class="meta">
             <div class="t">YAGO 4.5: A Large and Clean Knowledge Base with a Rich Taxonomy</div>
             <div class="a">Fabian M. Suchanek, Mehwish Alam, Thomas Bonald, Lihu Chen, Pierre-Henri Paris, Jules Soria</div>

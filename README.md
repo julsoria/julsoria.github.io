@@ -28,7 +28,7 @@ project pages.
 | Site URL | `config/_default/hugo.yaml` |
 | Navigation bar | `config/_default/menus.yaml` |
 | Profile photo | `assets/media/authors/me.png` |
-| Publication icons | inline emoji in `content/publications.md`, matching each paper's project-page favicon (🍺 formal-ale, 📐 beyond-l2) |
+| Publication icons | inline emoji in `content/publications.md`, matching each paper's project-page favicon (🍺 formal-ale, 📐 beyond-l2); YAGO uses `static/media/yago-mark.png` |
 
 ## Theme overrides in `layouts/`
 
@@ -42,6 +42,20 @@ after any theme upgrade, and delete them if upstream fixes things.
 - `_partials/hbx/blocks/markdown/block.html` — adds an opt-in `design.width: wide`. Upstream
   hardcodes `max-w-prose` + `lg:prose-xl`, far too narrow for a publication list with figures.
   Without the option the block renders exactly as upstream.
+
+## Contact address
+
+The e-mail address is never emitted in harvestable form. `content/_index.md` stores it
+reversed in a `data-x` attribute and assembles the `mailto:` in the browser; readers without
+JS see a `[dot]`/`[at]` form. The profile's envelope icon in `data/authors/me.yaml` therefore
+points at `/#postdoc`, **not** a raw `mailto:` — a plain link there would be the site's one
+harvestable copy and would defeat the obfuscation. Keep it that way when editing.
+
+## Third-party assets
+
+`static/media/yago-mark.png` is the emblem cropped from the YAGO project logo
+(<https://yago-knowledge.org/assets/images/logo.png>), used to identify the YAGO 4.5 paper.
+The YAGO site is licensed CC BY 4.0; the entry links back to yago-knowledge.org.
 
 ## Pending
 

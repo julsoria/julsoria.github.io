@@ -26,8 +26,11 @@ affiliations:
     url: https://list.cea.fr/en/
 
 links:
+  # Points at the contact block on the homepage rather than a raw `mailto:`. A plain mailto
+  # here would be the site's one harvestable copy of the address and would undo the
+  # obfuscation used in content/_index.md.
   - icon: at-symbol
-    url: 'mailto:jules.soria@cea.fr'
+    url: '/#postdoc'
     label: E-mail Me
   - icon: brands/github
     url: https://github.com/julsoria

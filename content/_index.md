@@ -61,8 +61,21 @@ sections:
           I work on formal explainability and trustworthy machine learning. I would be glad to
           hear from groups working on formal methods for ML, interpretability, or the
           verification of learned components —
-          <a href="mailto:jules.soria@cea.fr">jules.soria@cea.fr</a>.
+          <span class="eml" data-x="rf.aec@airos.seluj">jules[dot]soria[at]cea[dot]fr</span>.
         </div>
+
+        <script>
+        /* The address never appears in the served HTML in harvestable form: `data-x` holds it
+           reversed, and the mailto: link is assembled in the browser. Readers without JS still
+           see the [dot]/[at] form above. */
+        document.querySelectorAll('.eml').forEach(function (s) {
+          var addr = s.dataset.x.split('').reverse().join('');
+          var a = document.createElement('a');
+          a.href = 'mailto:' + addr;
+          a.textContent = addr;
+          s.replaceWith(a);
+        });
+        </script>
     design:
       width: wide
       columns: '1'

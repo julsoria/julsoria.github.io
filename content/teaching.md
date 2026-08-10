@@ -9,8 +9,13 @@ design:
 # Course names, levels and institutions are taken from the CSI 2026 slides (13/07/2026),
 # which supersede the CV: the MVA course is "Deep Learning in Practice" (not "Advanced Deep
 # Learning"), and "Data Science" at CentraleSupélec was missing entirely.
+# The CSI slide names A. Peronnet's project "AudioProtoPNet"; Jules corrected this to
+# "ProtoMelody" (2026-08-10), which supersedes the slide.
 # TODO (Jules): confirm the year for "Data Science" — the CSI slide lists it without a year,
 # so 2026 is an assumption.
+# Links: only the MVA course has a public per-course page I could verify. The other five link
+# to their institution, because I could not find (and would not invent) a public syllabus URL.
+# If any of these courses has a real course page, swap the institution link for it.
 
 sections:
   - block: markdown
@@ -34,48 +39,48 @@ sections:
         <h3>2026</h3>
 
         <div class="e">
-          <div class="t">Deep Learning in Practice <span class="lvl">M2</span></div>
-          <div class="v">Master MVA, ENS Paris-Saclay</div>
+          <div class="t"><a href="https://www.master-mva.com/cours/deep-learning-in-practice/">Deep Learning in Practice</a> <span class="lvl">M2</span></div>
+          <div class="v"><a href="https://www.master-mva.com/">Master MVA</a>, ENS Paris-Saclay</div>
         </div>
 
         <div class="e">
           <div class="t">Database Management Systems <span class="lvl">M1</span></div>
-          <div class="v">Université Paris Dauphine-PSL</div>
+          <div class="v"><a href="https://dauphine.psl.eu/">Université Paris Dauphine-PSL</a></div>
         </div>
 
         <div class="e">
           <div class="t">Systèmes d'Information et Programmation (SIP) <span class="lvl">L3</span></div>
-          <div class="v">CentraleSupélec</div>
+          <div class="v"><a href="https://www.centralesupelec.fr/">CentraleSupélec</a></div>
         </div>
 
         <div class="e">
           <div class="t">Data Science <span class="lvl">L3</span></div>
-          <div class="v">CentraleSupélec</div>
+          <div class="v"><a href="https://www.centralesupelec.fr/">CentraleSupélec</a></div>
         </div>
 
         <div class="e">
           <div class="t">Projet Informatique <span class="lvl">L3</span></div>
-          <div class="v">ENSTA Paris — second year running</div>
+          <div class="v"><a href="https://www.ensta-paris.fr/">ENSTA Paris</a> — second year running</div>
         </div>
 
         <h3 class="yr">2025</h3>
 
         <div class="e">
           <div class="t">Trustworthy &amp; Explainable AI <span class="lvl">M2</span></div>
-          <div class="v">Université Grenoble Alpes</div>
+          <div class="v"><a href="https://www.univ-grenoble-alpes.fr/">Université Grenoble Alpes</a></div>
         </div>
 
         <h3 class="yr">2024</h3>
 
         <div class="e">
           <div class="t">Projet Informatique <span class="lvl">L3</span></div>
-          <div class="v">ENSTA Paris</div>
+          <div class="v"><a href="https://www.ensta-paris.fr/">ENSTA Paris</a></div>
         </div>
 
         <h3 class="yr">Supervision</h3>
 
         <div class="e">
-          <div class="t">A. Peronnet — AudioProtoPNet <span class="lvl">M1</span></div>
+          <div class="t">A. Peronnet — ProtoMelody <span class="lvl">M1</span></div>
           <div class="v">Co-supervised internship, CEA List</div>
         </div>
 
