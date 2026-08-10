@@ -6,9 +6,13 @@ type: landing
 design:
   spacing: '3rem'
 
-# Course names, levels and institutions are taken from the CSI 2026 slides (13/07/2026),
-# which supersede the CV: the MVA course is "Deep Learning in Practice" (not "Advanced Deep
-# Learning"), and "Data Science" at CentraleSupélec was missing entirely.
+# Levels and institutions come from the CSI 2026 slides (13/07/2026), which are also where
+# "Data Science" at CentraleSupélec came from — it was missing from the CV.
+#
+# BUT the CSI slide is NOT authoritative on course names. It calls the MVA course "Deep
+# Learning in Practice"; the course's own page (lri.fr/~gcharpia/dlip) is titled "Advanced
+# Deep Learning — formerly known as Deep Learning in Practice". The CV was right and an
+# earlier edit here wrongly "corrected" it. Course pages win over slides.
 # The CSI slide names A. Peronnet's project "AudioProtoPNet"; Jules corrected this to
 # "ProtoMelody" (2026-08-10), which supersedes the slide.
 # TODO (Jules): confirm the year for "Data Science" — the CSI slide lists it without a year,
@@ -41,8 +45,8 @@ sections:
         <h3>2026</h3>
 
         <div class="e">
-          <div class="t"><a href="https://www.master-mva.com/cours/deep-learning-in-practice/">Deep Learning in Practice</a> <span class="lvl">M2</span></div>
-          <div class="v"><a href="https://www.master-mva.com/">Master MVA</a>, ENS Paris-Saclay</div>
+          <div class="t"><a href="https://www.lri.fr/~gcharpia/dlip/">Advanced Deep Learning</a> <span class="lvl">M2</span></div>
+          <div class="v"><a href="https://www.master-mva.com/">Master MVA</a> and MSc AI, ENS Paris-Saclay</div>
         </div>
 
         <div class="e">
