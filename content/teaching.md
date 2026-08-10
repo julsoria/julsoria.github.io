@@ -13,9 +13,11 @@ design:
 # "ProtoMelody" (2026-08-10), which supersedes the slide.
 # TODO (Jules): confirm the year for "Data Science" — the CSI slide lists it without a year,
 # so 2026 is an assumption.
-# Links: only the MVA course has a public per-course page I could verify. The other five link
-# to their institution, because I could not find (and would not invent) a public syllabus URL.
-# If any of these courses has a real course page, swap the institution link for it.
+# Course pages supplied by Jules (2026-08-10) and verified 200; all now link to the real
+# syllabus. "Data Science" at CentraleSupélec is the only one still linking to the institution
+# rather than a course page — add its URL here if there is one.
+# The UGA syllabus titles the course "Explainable trustworthy ai"; the CSI slide says
+# "Trustworthy & Explainable AI". Using the syllabus ordering so label and link agree.
 
 sections:
   - block: markdown
@@ -44,13 +46,13 @@ sections:
         </div>
 
         <div class="e">
-          <div class="t">Database Management Systems <span class="lvl">M1</span></div>
-          <div class="v"><a href="https://dauphine.psl.eu/">Université Paris Dauphine-PSL</a></div>
+          <div class="t"><a href="https://www.lamsade.dauphine.fr/~sworkman/dbms.html">Database Management Systems</a> <span class="lvl">M1</span></div>
+          <div class="v">Master IDD, LAMSADE — <a href="https://dauphine.psl.eu/">Université Paris Dauphine-PSL</a></div>
         </div>
 
         <div class="e">
-          <div class="t">Systèmes d'Information et Programmation (SIP) <span class="lvl">L3</span></div>
-          <div class="v"><a href="https://www.centralesupelec.fr/">CentraleSupélec</a></div>
+          <div class="t"><a href="https://wdi.centralesupelec.fr/1CC1000/HomePage-Fr">Systèmes d'Information et Programmation (SIP)</a> <span class="lvl">L3</span></div>
+          <div class="v">1CC1000 — <a href="https://www.centralesupelec.fr/">CentraleSupélec</a></div>
         </div>
 
         <div class="e">
@@ -59,21 +61,21 @@ sections:
         </div>
 
         <div class="e">
-          <div class="t">Projet Informatique <span class="lvl">L3</span></div>
+          <div class="t"><a href="https://synapses.ensta-paris.fr/catalogue/2025-2026/ue/16/CSC-3IN04-TA-projet-informatique">Projet Informatique</a> <span class="lvl">L3</span></div>
           <div class="v"><a href="https://www.ensta-paris.fr/">ENSTA Paris</a> — second year running</div>
         </div>
 
         <h3 class="yr">2025</h3>
 
         <div class="e">
-          <div class="t">Trustworthy &amp; Explainable AI <span class="lvl">M2</span></div>
-          <div class="v"><a href="https://www.univ-grenoble-alpes.fr/">Université Grenoble Alpes</a></div>
+          <div class="t"><a href="https://m-ai.imag.fr/syllabus/cross-disc/explainable_trustworthy_ai/">Explainable &amp; Trustworthy AI</a> <span class="lvl">M2</span></div>
+          <div class="v">Master of Artificial Intelligence, UFR IM²AG — <a href="https://www.univ-grenoble-alpes.fr/">Université Grenoble Alpes</a></div>
         </div>
 
         <h3 class="yr">2024</h3>
 
         <div class="e">
-          <div class="t">Projet Informatique <span class="lvl">L3</span></div>
+          <div class="t"><a href="https://synapses.ensta-paris.fr/catalogue/2025-2026/ue/16/CSC-3IN04-TA-projet-informatique">Projet Informatique</a> <span class="lvl">L3</span></div>
           <div class="v"><a href="https://www.ensta-paris.fr/">ENSTA Paris</a></div>
         </div>
 
