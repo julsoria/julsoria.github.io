@@ -5,6 +5,10 @@ summary: ''
 date: 2026-08-09
 type: landing
 
+# TODO (Jules): the Gold Reviewer item is filed under Jul 2026 because that is when ICML 2026
+# ran (6–11 July, Seoul). If the badge was actually announced with the decisions rather than
+# at the conference, move it to the right month.
+
 sections:
   # `resume-biography` (not `-3`) renders avatar, name, role, affiliation, links and bio
   # but NOT education — which lives on /cv/ instead. It also drops the interests list,
@@ -85,7 +89,11 @@ sections:
     content:
       title: 'News'
       text: |-
+        **Sep 2026** — On the organizing committee of the [**11th JDSE**](https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering), Université Paris-Saclay, 24–25 September.
+
         **Sep 2026** — ⭐ *Beyond $L_2$* to be presented at **ECML PKDD 2026**, Naples.
+
+        **Jul 2026** — ⭐ Awarded a **Gold Reviewer** badge for **ICML 2026**.
 
         **Jul 2026** — Talk at **CAp & RFIAP 2026**, Montpellier.
 
