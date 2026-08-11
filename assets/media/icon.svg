@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Jules Soria">
-  <!-- Emoji favicon, same technique as the project pages (formal-ale uses 🍺, beyond-l2 uses
-       📐) so the three sites read as one family. Swap the character below to change the icon;
-       assets/media/icon.png must be re-rendered to match, because the Apple touch icon
-       resolves media/icon.png directly and would otherwise fall back to the Hugo Blox H. -->
-  <!-- 🐧 is the running example throughout Jules's own figures and slides (the emperor vs
-       royal penguin toy model in the ALE teaser). -->
-  <text x="50" y="52" font-size="80" text-anchor="middle" dominant-baseline="central">🐧</text>
-</svg>
