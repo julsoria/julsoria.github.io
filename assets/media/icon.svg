@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JS">
+  <!-- Site favicon. Overrides the Hugo Blox default (a white H on hot pink) shipped in the
+       blox module at assets/media/icon.png. The theme's get_site_icon partial prefers
+       assets/media/icon.svg, then falls back to assets/media/icon.png — icon.png must also
+       exist here, otherwise the Apple touch icon resolves back to the module's H. -->
+  <rect width="64" height="64" rx="13" fill="#2563eb"/>
+  <text x="32" y="32" text-anchor="middle" dominant-baseline="central"
+        font-family="Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-weight="700" font-size="29" letter-spacing="-0.5" fill="#ffffff">JS</text>
+</svg>
