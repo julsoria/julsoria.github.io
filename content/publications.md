@@ -48,7 +48,9 @@ sections:
             <div class="v">ECML PKDD 2026 &middot; Naples, Italy</div>
             <div class="l">
               <a href="https://beyond-l2.github.io/">project page</a>
+              <a href="https://arxiv.org/abs/2608.16773">arXiv</a>
               <a href="https://github.com/julsoria/beyond_l2">code</a>
+              <a href="https://zenodo.org/records/22311315">models</a>
             </div>
           </div>
         </div>

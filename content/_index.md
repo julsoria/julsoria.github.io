@@ -93,6 +93,8 @@ sections:
 
         **Sep 2026** — ⭐ *Beyond $L_2$* to be presented at **ECML PKDD 2026**, Naples.
 
+        **Aug 2026** — *Beyond $L_2$* is now a [preprint on arXiv](https://arxiv.org/abs/2608.16773).
+
         **Jul 2026** — ⭐ Awarded a **Gold Reviewer** badge for **ICML 2026**.
 
         **Jul 2026** — Talk at **CAp & RFIAP 2026**, Montpellier.

@@ -19,7 +19,7 @@ project pages.
 | Publications | `content/publications.md` |
 | Talks | `content/talks.md` |
 | Teaching | `content/teaching.md` |
-| CV (experience, education, skills, languages) | `content/cv.md` |
+| CV (experience, education, service) | `content/cv.md` |
 
 | What else | Where |
 |---|---|
@@ -64,7 +64,6 @@ The YAGO site is licensed CC BY 4.0; the entry links back to yago-knowledge.org.
 - The **Download CV** button in `content/_index.md` is commented out. Uncomment it once a
   redacted CV — no phone number, no home address — is placed at `static/uploads/cv.pdf`.
 - `content/talks.md` has a front-matter note listing three decks I could not map to a venue.
-- Beyond-$L_2$ has no arXiv or Zenodo link yet; add to `content/publications.md` when posted.
 
 ## Local preview (optional)
 
