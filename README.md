@@ -74,7 +74,8 @@ Talk slides in `static/uploads/slides/` are recompressed with `gs -dPDFSETTINGS=
 
 ## Pending
 
-- `assets/media/authors/me.png` is a **placeholder monogram** — drop in a real headshot at the same path (square, ideally ≥ 800×800). Nothing else needs changing.
+- `assets/media/authors/me.png` is a **placeholder monogram** — drop in a real headshot at the same path (square, ideally ≥ 800×800). Nothing else needs changing: the French profile resolves its avatar as `media/authors/me-fr.*`, and `config/_default/module.yaml` mounts the same file at that second path rather than keeping two copies. Hugo serves a content-hashed filename, so replacing it busts the cache by itself.
+- Clicking the photo plays one of five short animations, picked at random and never the same twice running (`layouts/_partials/hooks/head-end/avatar-interaction.html`). It is skipped entirely for anyone whose system asks for reduced motion.
 - The **Download CV** button in the homepages is commented out. Uncomment it once a redacted CV — no phone number, no home address — is placed at `static/uploads/cv.pdf`.
 - `content/en/talks.md` has a front-matter note listing two decks that could not be mapped to a venue.
 - "Data Science" at CentraleSupélec has no course page, and its 2026 date is an assumption.
