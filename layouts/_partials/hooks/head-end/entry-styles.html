@@ -105,6 +105,19 @@
 .dark .publist .vlogo img{filter:brightness(0) invert(1);opacity:.85}
 @media(max-width:640px){.publist .vlogo{display:none}}
 
+/* ---- institution logos under the bio --------------------------------- */
+.insts{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
+  gap:1.6rem;margin:.25rem 0 0}
+.insts a{display:inline-flex;align-items:center;line-height:0;
+  opacity:.85;transition:opacity .15s}
+.insts a:hover{opacity:1}
+.insts img{height:2.1rem;width:auto;margin:0}
+/* Both marks are dark-on-transparent, so on a dark theme they would disappear.
+   Invert-and-brighten would wreck CEA's red block, so sit them on a light chip
+   instead and keep the brand colours correct. */
+.dark .insts a{background:rgba(255,255,255,.92);border-radius:8px;padding:.35rem .55rem}
+@media(max-width:640px){.insts img{height:1.7rem}.insts{gap:1.1rem}}
+
 /* ---- contact address: literal text, not a link ------------------------ */
 .eml{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
   font-size:.92em;white-space:nowrap;background:rgba(120,120,120,.14);

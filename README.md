@@ -70,6 +70,11 @@ The profile's envelope icon in both author profiles points at the `#postdoc` con
 
 ## Third-party assets
 
+Institution logos in `static/media/inst/` were extracted from Jules's own CSI 2026 slide deck with `pdfimages`, composed with their alpha masks and trimmed. On a dark theme both marks sit on a light chip rather than being inverted, which would wreck CEA's red block.
+
+`static/media/venues/ecml-pkdd.svg` is the ECML PKDD logo from ecmlpkdd.org, shown in the right-hand column of that paper's entry via the `venuelogo` param. **AAAI and SIGIR logos are missing**: aaai.org and sigir.org both return 403 to curl and to a headless browser, so neither could be fetched. Drop a file in `static/media/venues/` and add `venuelogo="/media/venues/<file>"` to the entry.
+
+
 `static/media/yago-mark.png` is the emblem cropped from the YAGO project logo (<https://yago-knowledge.org/assets/images/logo.png>), used to identify the YAGO 4.5 paper. The YAGO site is licensed CC BY 4.0; the entry links back to yago-knowledge.org.
 
 Talk slides in `static/uploads/slides/` are recompressed with `gs -dPDFSETTINGS=/ebook` (33 MB of originals down to 5.3 MB). Re-run that when adding a deck rather than committing the original.

@@ -51,6 +51,11 @@ sections:
     content:
       title: ''
       text: |-
+        <div class="insts">
+          <a href="https://list.cea.fr/en/" title="CEA List"><img src="/media/inst/cea-list.png" alt="CEA List"></a>
+          <a href="https://www.universite-paris-saclay.fr/" title="Université Paris-Saclay"><img src="/media/inst/paris-saclay.png" alt="Université Paris-Saclay"></a>
+        </div>
+
         <p style="text-align:center;opacity:.85">
           <strong>Research interests</strong> &nbsp;·&nbsp; Formal explainable AI
           &nbsp;·&nbsp; Interpretable machine learning &nbsp;·&nbsp; Trustworthy AI

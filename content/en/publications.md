@@ -38,7 +38,7 @@ sections:
 
         {{< yr title="2026" first="true" >}}
 
-        {{< pub icon="📐" type="conference" core="A" title="Beyond $L_2$: Generalizing Abductive Latent Explanations to Diverse Prototype-Based Architectures"
+        {{< pub icon="📐" type="conference" core="A" venuelogo="/media/venues/ecml-pkdd.svg" title="Beyond $L_2$: Generalizing Abductive Latent Explanations to Diverse Prototype-Based Architectures"
                 authors="Jules Soria, Alban Grastien, Romain Xu-Darme, Julien Girard-Satabin, Zakaria Chihani, Daniela Cancila"
                 venue="ECML PKDD 2026, Research Track &middot; Naples, Italy"
                 project="https://beyond-l2.github.io/" arxiv="https://arxiv.org/abs/2608.16773"

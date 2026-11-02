@@ -31,6 +31,11 @@ sections:
     content:
       title: ''
       text: |-
+        <div class="insts">
+          <a href="https://list.cea.fr/en/" title="CEA List"><img src="/media/inst/cea-list.png" alt="CEA List"></a>
+          <a href="https://www.universite-paris-saclay.fr/" title="Université Paris-Saclay"><img src="/media/inst/paris-saclay.png" alt="Université Paris-Saclay"></a>
+        </div>
+
         <p style="text-align:center;opacity:.85">
           <strong>Thèmes de recherche</strong> &nbsp;·&nbsp; IA explicable formelle
           &nbsp;·&nbsp; Apprentissage interprétable &nbsp;·&nbsp; IA de confiance
