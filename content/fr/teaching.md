@@ -6,74 +6,46 @@ type: landing
 design:
   spacing: '3rem'
 
+# Miroir français de content/en/teaching.md — voir ce fichier pour le mode d'emploi.
+
 sections:
   - block: markdown
     content:
       title: ''
       text: |-
-        <style>
-        .entries .e{margin:0 0 1.4rem}
-        .entries .t{font-weight:700;line-height:1.35;margin-bottom:.15rem}
-        .entries .v{font-size:.94em;opacity:.85}
-        .entries h3{margin:0 0 1.25rem;padding-bottom:.35rem;
-          border-bottom:1px solid rgba(120,120,120,.25)}
-        .entries .yr{margin-top:2.5rem}
-        .entries .note{font-size:.94em;opacity:.85;margin-top:1.75rem;
-          padding-top:1rem;border-top:1px solid rgba(120,120,120,.2)}
-        .entries .lvl{font-size:.78em;font-weight:600;letter-spacing:.02em;
-          border:1px solid rgba(120,120,120,.4);border-radius:999px;
-          padding:.05rem .5rem;margin-left:.5rem;opacity:.75;white-space:nowrap}
-        </style>
-
         <div class="entries">
 
-        <h3>2026</h3>
+        {{< yr title="2026" first="true" >}}
 
-        <div class="e">
-          <div class="t"><a href="https://www.lri.fr/~gcharpia/dlip/">Advanced Deep Learning</a> <span class="lvl">M2</span></div>
-          <div class="v"><a href="https://www.master-mva.com/">Master MVA</a> et MSc AI, ENS Paris-Saclay</div>
-        </div>
+        {{< course title="Advanced Deep Learning" url="https://www.lri.fr/~gcharpia/dlip/" level="M2"
+                   where="<a href=\"https://www.master-mva.com/\">Master MVA</a> et MSc AI, ENS Paris-Saclay" >}}
 
-        <div class="e">
-          <div class="t"><a href="https://www.lamsade.dauphine.fr/~sworkman/dbms.html">Database Management Systems</a> <span class="lvl">M1</span></div>
-          <div class="v">Master IDD, LAMSADE — <a href="https://dauphine.psl.eu/">Université Paris Dauphine-PSL</a></div>
-        </div>
+        {{< course title="Database Management Systems" url="https://www.lamsade.dauphine.fr/~sworkman/dbms.html" level="M1"
+                   where="Master IDD, LAMSADE — <a href=\"https://dauphine.psl.eu/\">Université Paris Dauphine-PSL</a>" >}}
 
-        <div class="e">
-          <div class="t"><a href="https://wdi.centralesupelec.fr/1CC1000/HomePage-Fr">Systèmes d'Information et Programmation (SIP)</a> <span class="lvl">L3</span></div>
-          <div class="v">1CC1000 — <a href="https://www.centralesupelec.fr/">CentraleSupélec</a></div>
-        </div>
+        {{< course title="Systèmes d'Information et Programmation (SIP)" url="https://wdi.centralesupelec.fr/1CC1000/HomePage-Fr" level="L3"
+                   where="1CC1000 — <a href=\"https://www.centralesupelec.fr/\">CentraleSupélec</a>" >}}
 
-        <div class="e">
-          <div class="t">Data Science <span class="lvl">L3</span></div>
-          <div class="v"><a href="https://www.centralesupelec.fr/">CentraleSupélec</a></div>
-        </div>
+        {{< course title="Data Science" level="L3"
+                   where="<a href=\"https://www.centralesupelec.fr/\">CentraleSupélec</a>" >}}
 
-        <div class="e">
-          <div class="t"><a href="https://synapses.ensta-paris.fr/catalogue/2025-2026/ue/16/CSC-3IN04-TA-projet-informatique">Projet Informatique</a> <span class="lvl">L3</span></div>
-          <div class="v"><a href="https://www.ensta-paris.fr/">ENSTA Paris</a> — deuxième année consécutive</div>
-        </div>
+        {{< course title="Projet Informatique" url="https://synapses.ensta-paris.fr/catalogue/2025-2026/ue/16/CSC-3IN04-TA-projet-informatique" level="L3"
+                   where="<a href=\"https://www.ensta-paris.fr/\">ENSTA Paris</a> — deuxième année consécutive" >}}
 
-        <h3 class="yr">2025</h3>
+        {{< yr title="2025" >}}
 
-        <div class="e">
-          <div class="t"><a href="https://m-ai.imag.fr/syllabus/cross-disc/explainable_trustworthy_ai/">Explainable &amp; Trustworthy AI</a> <span class="lvl">M2</span></div>
-          <div class="v">Master of Artificial Intelligence, UFR IM²AG — <a href="https://www.univ-grenoble-alpes.fr/">Université Grenoble Alpes</a></div>
-        </div>
+        {{< course title="Explainable &amp; Trustworthy AI" url="https://m-ai.imag.fr/syllabus/cross-disc/explainable_trustworthy_ai/" level="M2"
+                   where="Master of Artificial Intelligence, UFR IM²AG — <a href=\"https://www.univ-grenoble-alpes.fr/\">Université Grenoble Alpes</a>" >}}
 
-        <h3 class="yr">2024</h3>
+        {{< yr title="2024" >}}
 
-        <div class="e">
-          <div class="t"><a href="https://synapses.ensta-paris.fr/catalogue/2025-2026/ue/16/CSC-3IN04-TA-projet-informatique">Projet Informatique</a> <span class="lvl">L3</span></div>
-          <div class="v"><a href="https://www.ensta-paris.fr/">ENSTA Paris</a></div>
-        </div>
+        {{< course title="Projet Informatique" url="https://synapses.ensta-paris.fr/catalogue/2025-2026/ue/16/CSC-3IN04-TA-projet-informatique" level="L3"
+                   where="<a href=\"https://www.ensta-paris.fr/\">ENSTA Paris</a>" >}}
 
-        <h3 class="yr">Encadrement</h3>
+        {{< yr title="Encadrement" >}}
 
-        <div class="e">
-          <div class="t">A. Peronnet — ProtoMelody <span class="lvl">M1</span></div>
-          <div class="v">Co-encadrement de stage, CEA List</div>
-        </div>
+        {{< course title="A. Peronnet — ProtoMelody" level="M1"
+                   where="Co-encadrement de stage, CEA List" >}}
 
         </div>
     design:

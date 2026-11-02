@@ -1,0 +1,14 @@
+{{/* An award, grant, organising role or reviewing row. Usage:
+
+       {{< svc title="Top Reviewer" badge="NeurIPS 2026"
+               note="Awarded to reviewers recognised for the quality of their reviews" >}}
+
+     badge  optional; gold pill after the title
+     url    optional; links the title
+     note   optional; the muted second line */}}
+<div class="e">
+  <div class="t">{{ with .Get "url" }}<a href="{{ . }}">{{ end }}{{ .Get "title" | safeHTML }}{{ if .Get "url" }}</a>{{ end }}{{ with .Get "badge" }} <span class="badge">{{ . }}</span>{{ end }}</div>
+  {{- with .Get "note" }}
+  <div class="v">{{ . | safeHTML }}</div>
+  {{- end }}
+</div>

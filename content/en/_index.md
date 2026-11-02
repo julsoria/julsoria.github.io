@@ -59,14 +59,6 @@ sections:
     content:
       title: ''
       text: |-
-        <style>
-        /* Styled as a literal string, not a link: monospace and a faint chip so it reads
-           unmistakably as an address to copy, with no hover/underline affordance. */
-        .eml{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
-          font-size:.92em;white-space:nowrap;background:rgba(120,120,120,.14);
-          border-radius:5px;padding:.1rem .45rem}
-        </style>
-
         <div style="border:1px solid rgba(37,99,235,.35);border-left:4px solid #2563eb;
           border-radius:10px;padding:1.1rem 1.4rem;background:rgba(37,99,235,.06)">
           <strong>I am currently looking for post-doc positions.</strong>

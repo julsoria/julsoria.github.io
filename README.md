@@ -31,6 +31,24 @@ Bilingual: English at the site root, French under `/fr/`. Five pages each, with 
 | Talk slides | `static/uploads/slides/` |
 | Publication icons | inline emoji in the publications pages, matching each paper's project-page favicon (🍺 formal-ale, 📐 beyond-l2); YAGO uses `static/media/yago-mark.png` |
 
+## Editing content
+
+Entries are written as shortcodes, one call per entry, so there is no raw HTML to indent and no CSS in the content files. Each page carries a `HOW TO ADD …` block in its front matter with a copy-paste example.
+
+| Shortcode | For | Example |
+|---|---|---|
+| `talk` | a talk | `{{< talk title="…" venue="Venue · City · Month Year" slides="2026-09-file.pdf" >}}` |
+| `course` | a taught course or a supervision | `{{< course title="…" url="…" level="M2" where="Programme, Institution" >}}` |
+| `svc` | an award, grant, organising or reviewing row | `{{< svc title="Top Reviewer" badge="NeurIPS 2026" note="…" >}}` |
+| `pub` | a publication; paired, links written as markdown between the tags | `{{< pub icon="📐" title="…" authors="…" venue="…" >}}[arXiv](…)\n{{< /pub >}}` |
+| `yr` | a year or group heading | `{{< yr title="2026" first="true" >}}` |
+
+They are defined in `layouts/_shortcodes/`, each with its parameters documented at the top of the file. `talk` translates its own link label (slides / diapositives) from the page language, so the two language versions stay identical apart from prose.
+
+All the styling lives in one place, `layouts/_partials/hooks/head-end/entry-styles.html`. Change a rule there and it applies to every page in both languages.
+
+**Every page exists twice.** A change to `content/en/<page>.md` must be mirrored in `content/fr/<page>.md`, and a change to `data/authors/me.yaml` in `data/authors/me-fr.yaml`.
+
 ## Theme overrides in `layouts/`
 
 Two files shadow the upstream `HugoBlox/kit` `blox` module. Re-diff both against the module after any theme upgrade, and delete them if upstream fixes things.

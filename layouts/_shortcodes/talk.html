@@ -1,0 +1,18 @@
+{{/* A talk. Usage:
+
+       {{< talk title="Formal Abductive Latent Explanations"
+                venue="AAAI 2026 · Singapore · January 2026"
+                slides="2026-01-aaai.pdf" >}}
+
+     slides  optional; filename only, resolved under /uploads/slides/
+     kind    optional; "poster" labels the link "poster" instead of "slides"
+     The link label is translated from the page language. */}}
+{{- $slides := .Get "slides" -}}
+{{- $kind := .Get "kind" | default "slides" -}}
+{{- $fr := eq .Page.Language.Lang "fr" -}}
+{{- $label := cond $fr "diapositives" "slides" -}}
+{{- if eq $kind "poster" }}{{ $label = "poster" }}{{ end -}}
+<div class="e">
+  <div class="t">{{ .Get "title" | .Page.RenderString }}{{ with .Get "note" }} <em>({{ . }})</em>{{ end }}</div>
+  <div class="v">{{ .Get "venue" | safeHTML }}{{ with $slides }} &middot; <a href="/uploads/slides/{{ . }}">{{ $label }}</a>{{ end }}</div>
+</div>

@@ -8,21 +8,6 @@ design:
 
 # Note: `username` refers to the author profile in `data/authors/`
 #
-# JDSE links to the stable Paris-Saclay landing page, NOT the dedicated conference site
-# (hebergement.universite-paris-saclay.fr/jdse/jdse2026/), which returns nginx 502 as of
-# 2026-08-11 in both curl and a browser. Swap the link back once that host is up again.
-#
-# Service record supplied by Jules (2026-08-11). Reviewer vs subreviewer follows his own
-# labelling: he tagged ECAI 2025 and ECML PKDD 2026 as subreviews and left the rest untagged,
-# so everything untagged is listed as reviewer. ACSAC 2025 is artifact evaluation, a distinct
-# role. Correct here if WAISE 2024 or SAC 2025 were in fact subreviews.
-#
-# The `resume-skills` and `resume-languages` blocks were removed deliberately: they render
-# self-rated proficiency as percentage bars and rings ("Python 100%", "Mandarin 20%"), which
-# reads badly on an academic CV. The underlying `skills:` and `languages:` data is still in
-# data/authors/me.yaml, so re-adding either block is a two-line change if ever wanted.
-
-# Page sections
 sections:
   - block: resume-experience
     content:
@@ -38,75 +23,41 @@ sections:
     content:
       title: 'Awards & Service'
       text: |-
-        <style>
-        .entries .e{margin:0 0 1.4rem}
-        .entries .t{font-weight:700;line-height:1.35;margin-bottom:.15rem}
-        .entries .v{font-size:.94em;opacity:.85}
-        .entries .badge{font-size:.78em;font-weight:600;letter-spacing:.02em;
-          border:1px solid rgba(202,138,4,.55);color:#a16207;background:rgba(234,179,8,.12);
-          border-radius:999px;padding:.05rem .5rem;margin-left:.35rem;white-space:nowrap}
-        /* Use the theme's own `.dark` class. A `:root:not([data-theme=light])` selector would
-           also match the default "system" state and put pale yellow on a white background. */
-        .dark .entries .badge{color:#fde047}
-        .entries h3{margin:0 0 1.25rem;padding-bottom:.35rem;
-          border-bottom:1px solid rgba(120,120,120,.25)}
-        .entries .grp{margin-top:2.25rem}
-        </style>
-
         <div class="entries">
 
-        <h3>Awards</h3>
+        {{< yr title="Awards" first="true" >}}
 
-        <div class="e">
-          <div class="t">Top Reviewer <span class="badge">NeurIPS 2026</span></div>
-          <div class="v">Awarded to reviewers recognised for the quality of their reviews</div>
-        </div>
+        {{< svc title="Top Reviewer" badge="NeurIPS 2026"
+                note="Awarded to reviewers recognised for the quality of their reviews" >}}
 
-        <div class="e">
-          <div class="t">Gold Reviewer <span class="badge">ICML 2026</span></div>
-          <div class="v">Awarded to reviewers recognised for the quality of their reviews</div>
-        </div>
+        {{< svc title="Gold Reviewer" badge="ICML 2026"
+                note="Awarded to reviewers recognised for the quality of their reviews" >}}
 
-        <div class="e">
-          <div class="t">Plan of Action for Cooperation in Europe (PACE) <span class="badge">CEA 2026</span></div>
-          <div class="v">Competitive CEA mobility grant for a short research visit to an EU laboratory, awarded by a CEA selection committee &middot; &euro;1,200</div>
-        </div>
+        {{< svc title="Plan of Action for Cooperation in Europe (PACE)" badge="CEA 2026"
+                note="Competitive CEA mobility grant for a short research visit to an EU laboratory, awarded by a CEA selection committee &middot; &euro;1,200" >}}
 
-        <h3 class="grp">Organizing</h3>
+        {{< yr title="Organizing" >}}
 
-        <div class="e">
-          <div class="t"><a href="https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering">Junior Conference on Data Science and Engineering (JDSE 2026)</a></div>
-          <div class="v">Organizing committee &middot; 11th edition &middot; Université Paris-Saclay, Orsay &middot; 24–25 September 2026</div>
-        </div>
+        {{< svc title="Junior Conference on Data Science and Engineering (JDSE 2026)"
+                url="https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering"
+                note="Organizing committee &middot; 11th edition &middot; Université Paris-Saclay, Orsay &middot; 24–25 September 2026" >}}
 
-        <h3 class="grp">Funding</h3>
+        {{< yr title="Funding" >}}
 
-        <div class="e">
-          <div class="t">SAIF — Safe Artificial Intelligence through Formal methods</div>
-          <div class="v">PEPR project, France 2030 &middot; ANR-23-PEIA-0006 &middot; supports this thesis</div>
-        </div>
+        {{< svc title="SAIF — Safe Artificial Intelligence through Formal methods"
+                note="PEPR project, France 2030 &middot; ANR-23-PEIA-0006 &middot; supports this thesis" >}}
 
-        <div class="e">
-          <div class="t">FactoryIA supercomputer</div>
-          <div class="v">Compute for the experiments, financed by the Île-de-France Regional Council</div>
-        </div>
+        {{< svc title="FactoryIA supercomputer"
+                note="Compute for the experiments, financed by the Île-de-France Regional Council" >}}
 
-        <h3 class="grp">Reviewing</h3>
+        {{< yr title="Reviewing" >}}
 
-        <div class="e">
-          <div class="t">Reviewer</div>
-          <div class="v">AAAI 2027 &middot; NeurIPS 2026 &middot; ICML 2026 &middot; AAAI 2026 &middot; SAC 2025 &middot; WAISE 2024</div>
-        </div>
+        {{< svc title="Reviewer"
+                note="AAAI 2027 &middot; NeurIPS 2026 &middot; ICML 2026 &middot; AAAI 2026 &middot; SAC 2025 &middot; WAISE 2024" >}}
 
-        <div class="e">
-          <div class="t">Subreviewer</div>
-          <div class="v">ECML PKDD 2026 &middot; ECAI 2025</div>
-        </div>
+        {{< svc title="Subreviewer" note="ECML PKDD 2026 &middot; ECAI 2025" >}}
 
-        <div class="e">
-          <div class="t">Artifact Evaluation Committee</div>
-          <div class="v">ACSAC 2025</div>
-        </div>
+        {{< svc title="Artifact Evaluation Committee" note="ACSAC 2025" >}}
 
         </div>
     design:
