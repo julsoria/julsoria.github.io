@@ -82,30 +82,36 @@
   border:1px solid rgba(120,120,120,.4);border-radius:999px;
   padding:.05rem .45rem;margin-left:.4rem;opacity:.8;white-space:nowrap}
 
-/* CORE rank colours follow the Google Scholar Venue Ranker legend: A*/Q1 gold,
-   A/Q2 green. B and C are not in the published legend and are not used on this
-   site either; they continue the ramp (orange, grey) so a future entry has a
-   colour that cannot be mistaken for one of the top two.
-   The text tones are darkened for contrast on white, and lightened on dark. */
-.core-astar{border-color:rgba(202,138,4,.6);color:#a16207;background:rgba(234,179,8,.14)}
-.core-a    {border-color:rgba(21,128,61,.55);color:#15803d;background:rgba(34,197,94,.12)}
-.core-b    {border-color:rgba(194,65,12,.5);color:#c2410c;background:rgba(249,115,22,.12)}
-.core-c    {border-color:rgba(120,120,120,.5);color:#6b7280;background:rgba(120,120,120,.10)}
-.dark .core-astar{color:#fde047}
-.dark .core-a{color:#4ade80}
-.dark .core-b{color:#fdba74}
-.dark .core-c{color:#d1d5db}
+/* CORE rank colours are the Google Scholar Venue Ranker palette, read from the
+   extension's own inject.css, which paints each badge as a solid fill with a
+   darker border and darker ink:
+     .gsr-rank-badge--astar{background:var(--gsr-a-star);
+                            border-color:var(--gsr-a-star-border);
+                            color:var(--gsr-a-star-ink)}
+   A* yellow, A green, B lime, C orange. Each chip carries its own contrast
+   (5.5:1 or better), so one set of values serves both themes -- hence no
+   `.dark` overrides here, and opacity is reset to 1 so the fill stays true. */
+.core-astar,.core-a,.core-b,.core-c{opacity:1}
+.core-astar{background:#ffd84f;border-color:#d6b335;color:#664c00}
+.core-a    {background:#8cdf63;border-color:#60b54c;color:#1a5016}
+.core-b    {background:#b6dd48;border-color:#91b42a;color:#465c0d}
+.core-c    {background:#ff9a68;border-color:#e17b44;color:#7b2f09}
 
 /* link row: small inline glyph before each label */
 .publist .l a{display:inline-flex;align-items:center;gap:.28rem}
 .publist .l svg.li{width:.95em;height:.95em;flex:none}
 
-/* right-hand venue logo column */
+/* right-hand venue logo column.
+   Marks are aligned on a common HEIGHT (3rem) rather than fitted into a shared
+   box. Fitting to a box sizes each mark by its longest side, so a square mark
+   (AAAI, 1:1) shrinks to the box height while a wide one (ECAI, 2.6:1) fills
+   the width and reads twice as large. Equal height is how logo rows are
+   normally set, and it matches the institution row further down. The 9rem cap
+   only bites on lockups wider than 3:1 (ENSTA, Dauphine). */
 .publist .pub{align-items:flex-start}
-.publist .vlogo{flex:0 0 5.5rem;display:flex;justify-content:flex-end;padding-top:.15rem}
-.publist .vlogo img{max-width:5.5rem;max-height:2.6rem;width:auto;height:auto;margin:0;
+.publist .vlogo{flex:0 0 9rem;display:flex;justify-content:flex-end;padding-top:.15rem}
+.publist .vlogo img{max-width:9rem;max-height:3rem;width:auto;height:auto;margin:0;
   object-fit:contain}
-.dark .publist .vlogo img{filter:brightness(0) invert(1);opacity:.85}
 @media(max-width:640px){.publist .vlogo{display:none}}
 
 /* ---- institution logos under the bio --------------------------------- */
@@ -114,7 +120,7 @@
 .insts a{display:inline-flex;align-items:center;line-height:0;
   opacity:.85;transition:opacity .15s}
 .insts a:hover{opacity:1}
-.insts img{height:2.1rem;width:auto;margin:0}
+.insts img{height:3rem;width:auto;max-width:9rem;margin:0}
 /* Both marks ship an official reversed variant for dark backgrounds, so swap the
    file rather than filtering the artwork: CEA keeps its red block and only the
    wordmark goes white, which no invert could reproduce. Both <img> are in the
@@ -122,16 +128,14 @@
 .insts .dk{display:none}
 .dark .insts .lt{display:none}
 .dark .insts .dk{display:inline}
-@media(max-width:640px){.insts img{height:1.7rem}.insts{gap:1.1rem}}
+@media(max-width:640px){.insts img{height:2.2rem}.insts{gap:1.1rem}}
 
 /* teaching rows that carry an institution mark */
 .entries .e-logo{display:flex;align-items:flex-start;gap:1.25rem}
 .entries .e-main{flex:1 1 auto;min-width:0}
-/* 7rem rather than 5: the box is width-bound for wide wordmarks (Dauphine's
-   lockup is 7.4:1, ENSTA's 5:1) and height-bound for the rest, so widening it
-   only grows the marks that were being squeezed. */
-.entries .vlogo{flex:0 0 7rem;display:flex;justify-content:flex-end;padding-top:.1rem}
-.entries .vlogo img{max-width:7rem;max-height:2.3rem;width:auto;height:auto;margin:0;
+/* same common height as the publication column above */
+.entries .vlogo{flex:0 0 9rem;display:flex;justify-content:flex-end;padding-top:.1rem}
+.entries .vlogo img{max-width:9rem;max-height:3rem;width:auto;height:auto;margin:0;
   object-fit:contain}
 .dark .entries .vlogo img,.dark .publist .vlogo img{
   background:rgba(255,255,255,.92);border-radius:6px;padding:.18rem .3rem;filter:none}
