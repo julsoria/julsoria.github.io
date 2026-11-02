@@ -35,7 +35,7 @@ sections:
 
         {{< pub icon="📐" title="Beyond $L_2$: Generalizing Abductive Latent Explanations to Diverse Prototype-Based Architectures"
                 authors="Jules Soria, Alban Grastien, Romain Xu-Darme, Julien Girard-Satabin, Zakaria Chihani, Daniela Cancila"
-                venue="ECML PKDD 2026 &middot; Naples, Italy" >}}
+                venue="ECML PKDD 2026, Research Track &middot; Naples, Italy" >}}
         [project page](https://beyond-l2.github.io/) [arXiv](https://arxiv.org/abs/2608.16773) [code](https://github.com/julsoria/beyond_l2) [models](https://zenodo.org/records/22311315)
         {{< /pub >}}
 

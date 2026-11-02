@@ -36,7 +36,7 @@ sections:
         {{< yr title="2026" first="true" >}}
 
         {{< talk title="Beyond $L_2$: Generalizing Abductive Latent Explanations to Diverse Prototype-Based Architectures"
-                 venue="ECML PKDD 2026 &middot; Naples &middot; 7–11 September 2026"
+                 venue="ECML PKDD 2026, Research Track &middot; Naples &middot; 7–11 September 2026"
                  slides="2026-09-ecml-pkdd-beyond-l2.pdf" >}}
 
         {{< talk title="Formal Abductive Latent Explanations for Prototype-Based Networks"
