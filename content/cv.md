@@ -36,7 +36,7 @@ sections:
   - block: markdown
     id: service
     content:
-      title: 'Service'
+      title: 'Awards & Service'
       text: |-
         <style>
         .entries .e{margin:0 0 1.4rem}
@@ -55,7 +55,19 @@ sections:
 
         <div class="entries">
 
-        <h3>Organizing</h3>
+        <h3>Awards</h3>
+
+        <div class="e">
+          <div class="t">Top Reviewer <span class="badge">NeurIPS 2026</span></div>
+          <div class="v">Awarded to reviewers recognised for the quality of their reviews</div>
+        </div>
+
+        <div class="e">
+          <div class="t">Gold Reviewer <span class="badge">ICML 2026</span></div>
+          <div class="v">Awarded to reviewers recognised for the quality of their reviews</div>
+        </div>
+
+        <h3 class="grp">Organizing</h3>
 
         <div class="e">
           <div class="t"><a href="https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering">Junior Conference on Data Science and Engineering (JDSE 2026)</a></div>
@@ -66,7 +78,7 @@ sections:
 
         <div class="e">
           <div class="t">Reviewer</div>
-          <div class="v">AAAI 2027 &middot; NeurIPS 2026 &middot; ICML 2026 <span class="badge">Gold Reviewer</span> &middot; AAAI 2026 &middot; SAC 2025 &middot; WAISE 2024</div>
+          <div class="v">AAAI 2027 &middot; NeurIPS 2026 &middot; ICML 2026 &middot; AAAI 2026 &middot; SAC 2025 &middot; WAISE 2024</div>
         </div>
 
         <div class="e">

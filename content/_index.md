@@ -89,9 +89,9 @@ sections:
     content:
       title: 'News'
       text: |-
-        **Sep 2026** — On the organizing committee of the [**11th JDSE**](https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering), Université Paris-Saclay, 24–25 September.
+        **Sep 2026** — Served on the organizing committee of the [**11th JDSE**](https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering), Université Paris-Saclay, 24–25 September.
 
-        **Sep 2026** — ⭐ *Beyond $L_2$* to be presented at **ECML PKDD 2026**, Naples.
+        **Sep 2026** — ⭐ Presented *Beyond $L_2$* at **ECML PKDD 2026**, Naples.
 
         **Aug 2026** — *Beyond $L_2$* is now a [preprint on arXiv](https://arxiv.org/abs/2608.16773).
 
