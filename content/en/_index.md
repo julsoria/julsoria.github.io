@@ -5,9 +5,11 @@ summary: ''
 date: 2026-08-09
 type: landing
 
-# TODO (Jules): the Gold Reviewer item is filed under Jul 2026 because that is when ICML 2026
-# ran (6–11 July, Seoul). If the badge was actually announced with the decisions rather than
-# at the conference, move it to the right month.
+# TODO (Jules): three award dates are placed, not sourced. Gold Reviewer sits at Jul 2026
+# because that is when ICML 2026 ran (6–11 July, Seoul). The PACE grant is at Oct 2026
+# because the dossier was finalised on 8 October, so the award must post-date that. The
+# NeurIPS Top Reviewer month is a guess — no document for it was found on disk. Correct any
+# of the three, and mirror the change in content/fr/_index.md.
 
 sections:
   # `resume-biography` (not `-3`) renders avatar, name, role, affiliation, links and bio
@@ -77,11 +79,13 @@ sections:
     content:
       title: 'News'
       text: |-
+        **Oct 2026** — ⭐ Awarded a **Top Reviewer** award for **NeurIPS 2026**.
+
+        **Oct 2026** — ⭐ Awarded a **CEA PACE** grant for a research visit to a European laboratory.
+
         **Sep 2026** — Served on the organizing committee of the [**11th JDSE**](https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering), Université Paris-Saclay, 24–25 September.
 
         **Sep 2026** — ⭐ Presented *Beyond $L_2$* at **ECML PKDD 2026**, Naples.
-
-        **Aug 2026** — *Beyond $L_2$* is now a [preprint on arXiv](https://arxiv.org/abs/2608.16773).
 
         **Jul 2026** — ⭐ Awarded a **Gold Reviewer** badge for **ICML 2026**.
 
@@ -93,7 +97,7 @@ sections:
 
         **Jan 2026** — ⭐ Presented *Formal Abductive Latent Explanations* at **AAAI 2026**, Singapore.
 
-        **Nov 2025** — ⭐ *Formal Abductive Latent Explanations* accepted at **AAAI 2026**; [preprint on arXiv](https://arxiv.org/abs/2511.16588).
+        **Nov 2025** — ⭐ *Formal Abductive Latent Explanations* accepted at **AAAI 2026**.
 
         **Oct 2025** — *Towards Abductive Latent Explanations* presented at **TRUST-AI @ ECAI 2025**, Bologna.
 

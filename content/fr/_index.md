@@ -63,11 +63,13 @@ sections:
     content:
       title: 'Actualités'
       text: |-
+        **Oct. 2026** — ⭐ Distinction **Top Reviewer** pour **NeurIPS 2026**.
+
+        **Oct. 2026** — ⭐ Bourse **PACE** du CEA pour une visite de recherche dans un laboratoire européen.
+
         **Sep. 2026** — Membre du comité d'organisation des [**11èmes JDSE**](https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering), Université Paris-Saclay, 24–25 septembre.
 
         **Sep. 2026** — ⭐ Présentation de *Beyond $L_2$* à **ECML PKDD 2026**, Naples.
-
-        **Août 2026** — *Beyond $L_2$* est désormais disponible en [prépublication sur arXiv](https://arxiv.org/abs/2608.16773).
 
         **Juil. 2026** — ⭐ Distinction **Gold Reviewer** pour **ICML 2026**.
 
@@ -79,7 +81,7 @@ sections:
 
         **Jan. 2026** — ⭐ Présentation de *Formal Abductive Latent Explanations* à **AAAI 2026**, Singapour.
 
-        **Nov. 2025** — ⭐ *Formal Abductive Latent Explanations* accepté à **AAAI 2026** ; [prépublication sur arXiv](https://arxiv.org/abs/2511.16588).
+        **Nov. 2025** — ⭐ *Formal Abductive Latent Explanations* accepté à **AAAI 2026**.
 
         **Oct. 2025** — Présentation de *Towards Abductive Latent Explanations* à **TRUST-AI @ ECAI 2025**, Bologne.
 
