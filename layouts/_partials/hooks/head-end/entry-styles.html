@@ -82,15 +82,18 @@
   border:1px solid rgba(120,120,120,.4);border-radius:999px;
   padding:.05rem .45rem;margin-left:.4rem;opacity:.8;white-space:nowrap}
 
-/* CORE rank colours follow the published Google-Scholar-Orderer legend:
-   A* dark green, A green, B yellow, C grey. */
-.core-astar{border-color:rgba(21,128,61,.6);color:#15803d;background:rgba(34,197,94,.14)}
-.core-a    {border-color:rgba(22,163,74,.5);color:#16a34a;background:rgba(34,197,94,.10)}
-.core-b    {border-color:rgba(202,138,4,.55);color:#a16207;background:rgba(234,179,8,.12)}
+/* CORE rank colours follow the Google Scholar Venue Ranker legend: A*/Q1 gold,
+   A/Q2 green. B and C are not in the published legend and are not used on this
+   site either; they continue the ramp (orange, grey) so a future entry has a
+   colour that cannot be mistaken for one of the top two.
+   The text tones are darkened for contrast on white, and lightened on dark. */
+.core-astar{border-color:rgba(202,138,4,.6);color:#a16207;background:rgba(234,179,8,.14)}
+.core-a    {border-color:rgba(21,128,61,.55);color:#15803d;background:rgba(34,197,94,.12)}
+.core-b    {border-color:rgba(194,65,12,.5);color:#c2410c;background:rgba(249,115,22,.12)}
 .core-c    {border-color:rgba(120,120,120,.5);color:#6b7280;background:rgba(120,120,120,.10)}
-.dark .core-astar{color:#4ade80}
-.dark .core-a{color:#86efac}
-.dark .core-b{color:#fde047}
+.dark .core-astar{color:#fde047}
+.dark .core-a{color:#4ade80}
+.dark .core-b{color:#fdba74}
 .dark .core-c{color:#d1d5db}
 
 /* link row: small inline glyph before each label */
@@ -112,17 +115,23 @@
   opacity:.85;transition:opacity .15s}
 .insts a:hover{opacity:1}
 .insts img{height:2.1rem;width:auto;margin:0}
-/* Both marks are dark-on-transparent, so on a dark theme they would disappear.
-   Invert-and-brighten would wreck CEA's red block, so sit them on a light chip
-   instead and keep the brand colours correct. */
-.dark .insts a{background:rgba(255,255,255,.92);border-radius:8px;padding:.35rem .55rem}
+/* Both marks ship an official reversed variant for dark backgrounds, so swap the
+   file rather than filtering the artwork: CEA keeps its red block and only the
+   wordmark goes white, which no invert could reproduce. Both <img> are in the
+   markup and one is always display:none, so neither is announced twice. */
+.insts .dk{display:none}
+.dark .insts .lt{display:none}
+.dark .insts .dk{display:inline}
 @media(max-width:640px){.insts img{height:1.7rem}.insts{gap:1.1rem}}
 
 /* teaching rows that carry an institution mark */
 .entries .e-logo{display:flex;align-items:flex-start;gap:1.25rem}
 .entries .e-main{flex:1 1 auto;min-width:0}
-.entries .vlogo{flex:0 0 5rem;display:flex;justify-content:flex-end;padding-top:.1rem}
-.entries .vlogo img{max-width:5rem;max-height:2.3rem;width:auto;height:auto;margin:0;
+/* 7rem rather than 5: the box is width-bound for wide wordmarks (Dauphine's
+   lockup is 7.4:1, ENSTA's 5:1) and height-bound for the rest, so widening it
+   only grows the marks that were being squeezed. */
+.entries .vlogo{flex:0 0 7rem;display:flex;justify-content:flex-end;padding-top:.1rem}
+.entries .vlogo img{max-width:7rem;max-height:2.3rem;width:auto;height:auto;margin:0;
   object-fit:contain}
 .dark .entries .vlogo img,.dark .publist .vlogo img{
   background:rgba(255,255,255,.92);border-radius:6px;padding:.18rem .3rem;filter:none}

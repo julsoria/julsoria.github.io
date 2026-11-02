@@ -42,7 +42,7 @@ sections:
 
         {{< yr title="2024" >}}
 
-        {{< pub img="/media/yago-mark.png" alt="Logo du projet YAGO" type="conference" core="A*"
+        {{< pub img="/media/yago-mark.png" alt="Logo du projet YAGO" type="conference" core="A*" venuelogo="/media/venues/sigir-2024.png"
                 title="YAGO 4.5: A Large and Clean Knowledge Base with a Rich Taxonomy"
                 authors="Fabian M. Suchanek, Mehwish Alam, Thomas Bonald, Lihu Chen, Pierre-Henri Paris, Jules Soria"
                 venue="SIGIR 2024 &middot; Washington DC, États-Unis &middot; 131–140"

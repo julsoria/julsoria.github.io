@@ -32,8 +32,8 @@ sections:
       title: ''
       text: |-
         <div class="insts">
-          <a href="https://list.cea.fr/en/" title="CEA List"><img src="/media/inst/cea-list.svg" alt="CEA List"></a>
-          <a href="https://www.universite-paris-saclay.fr/" title="Université Paris-Saclay"><img src="/media/inst/paris-saclay.png" alt="Université Paris-Saclay"></a>
+          <a href="https://list.cea.fr/en/" title="CEA List"><img class="lt" src="/media/inst/cea-list.svg" alt="CEA List"><img class="dk" src="/media/inst/cea-list-dark.svg" alt="CEA List"></a>
+          <a href="https://www.universite-paris-saclay.fr/" title="Université Paris-Saclay"><img class="lt" src="/media/inst/paris-saclay.png" alt="Université Paris-Saclay"><img class="dk" src="/media/inst/paris-saclay-dark.png" alt="Université Paris-Saclay"></a>
         </div>
 
         <p style="text-align:center;opacity:.85">

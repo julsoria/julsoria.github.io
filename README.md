@@ -70,9 +70,11 @@ The profile's envelope icon in both author profiles points at the `#postdoc` con
 
 ## Third-party assets
 
-Logos in `static/media/inst/` and `static/media/venues/` come from Jules's own brand-asset collection in `~/Documents/LOGOS` (CEA List, Paris-Saclay, ENSTA, CentraleSupélec, Dauphine-PSL, UGA, MVA, AAAI-26, ECAI 2025, ECML PKDD). They were trimmed and normalised to 130px tall; Dauphine's white background was made transparent, and MVA was cropped to its monogram. On a dark theme they sit on a light chip rather than being inverted.
+Logos in `static/media/inst/` and `static/media/venues/` come from Jules's own brand-asset collection in `~/Documents/LOGOS` (CEA List, Paris-Saclay, ENSTA, CentraleSupélec, Dauphine-PSL, UGA, MVA, AAAI-26, ECAI 2025, ECML PKDD, SIGIR 2024). They were trimmed to their alpha bounding box and normalised to 130px tall; MVA was cropped to its monogram.
 
-**SIGIR has no logo**: it is the one venue absent from `~/Documents/LOGOS`, and sigir.org returns 403 to curl and to a headless browser. Drop a file in `static/media/venues/` and add `venuelogo="/media/venues/<file>"` to the entry.
+On a dark theme, the publication and teaching marks sit on a light chip rather than being inverted — inverting would wreck CEA's red block and Dauphine's blue. The two institution marks under the homepage bio are the exception: both ship an official reversed variant (`cea-list-dark.svg`, `paris-saclay-dark.png`), so there the file is swapped instead, via `.insts .lt` / `.insts .dk`. CEA's reversed logo keeps the red block and turns only the wordmark white, which no CSS filter could reproduce — it is the "BLANC SUR ROUGE" declination, not the "WHITE" one, which turns the block itself white.
+
+The teaching logo column is 7rem rather than 5: it is width-bound for wide lockups (Dauphine's is 7.4:1) and height-bound for the rest, so the extra width only grows the marks that were being squeezed.
 
 
 `static/media/yago-mark.png` is the emblem cropped from the YAGO project logo (<https://yago-knowledge.org/assets/images/logo.png>), used to identify the YAGO 4.5 paper. The YAGO site is licensed CC BY 4.0; the entry links back to yago-knowledge.org.
