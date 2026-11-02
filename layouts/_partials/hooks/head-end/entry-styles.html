@@ -51,7 +51,15 @@
 @media(max-width:640px){.publist .icon{flex-basis:2.25rem;width:2.25rem;font-size:1.6rem}}
 
 /* ---- divider between the contact box and the news list --------------- */
-.sep{border:0;height:2px;width:clamp(4rem,20%,9rem);margin:2.5rem auto 0;
+/* Centred in the gap it sits in. The space BELOW the rule is structural, not
+   its own margin: the bio section ends 4rem after it and the news section
+   opens with another 4rem, so 8rem is already there whatever margin-bottom
+   says. Matching that above would mean 8rem of margin-top and a much taller
+   gap, so instead the rule is pushed down 5rem and 3rem is pulled back off
+   the bottom -- leaving 5rem clear on each side. If the theme's section
+   padding ever stops being 4rem, re-derive: margin-top = 2*padding + margin-
+   bottom. */
+.sep{border:0;height:2px;width:clamp(4rem,20%,9rem);margin:5rem auto -3rem;
   border-radius:2px;background:currentColor;opacity:.4}
 
 /* ---- news list: fixed date and star columns so every body aligns ------ */

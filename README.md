@@ -70,11 +70,11 @@ The profile's envelope icon in both author profiles points at the `#postdoc` con
 
 ## Third-party assets
 
-Logos in `static/media/inst/` and `static/media/venues/` come from Jules's own brand-asset collection in `~/Documents/LOGOS` (CEA List, Paris-Saclay, ENSTA, CentraleSupélec, Dauphine-PSL, UGA, MVA, AAAI-26, ECAI 2025, ECML PKDD, SIGIR 2024). They were trimmed to their alpha bounding box and normalised to 130px tall; MVA was cropped to its monogram.
+Logos in `static/media/inst/` and `static/media/venues/` come from Jules's own brand-asset collection in `~/Documents/LOGOS` (CEA List, Paris-Saclay, ENSTA, CentraleSupélec, Dauphine-PSL, UGA, MVA, AAAI-26, ECAI 2025, ECML PKDD, SIGIR 2024). They were trimmed to their alpha bounding box and normalised to 130px tall; MVA was cropped to its monogram. AAAI-26 shipped as an opaque 300×300 PNG whose artwork occupied only the middle 233×147 — an alpha trim removes nothing from a file with no transparency, so its surround is flood-filled from the four corners (which keeps the white inside the "A") and then trimmed. Check any new raster logo for this: if `Image.open(p).getchannel('A').getextrema()` starts at 255 the file is opaque and needs the flood fill, not the alpha trim.
 
 On a dark theme, the publication and teaching marks sit on a light chip rather than being inverted — inverting would wreck CEA's red block and Dauphine's blue. The two institution marks under the homepage bio are the exception: both ship an official reversed variant (`cea-list-dark.svg`, `paris-saclay-dark.png`), so there the file is swapped instead, via `.insts .lt` / `.insts .dk`. CEA's reversed logo keeps the red block and turns only the wordmark white, which no CSS filter could reproduce — it is the "BLANC SUR ROUGE" declination, not the "WHITE" one, which turns the block itself white.
 
-The teaching logo column is 7rem rather than 5: it is width-bound for wide lockups (Dauphine's is 7.4:1) and height-bound for the rest, so the extra width only grows the marks that were being squeezed.
+Logos are aligned on a common **height** (3rem) with a 9rem width cap, rather than fitted into a shared box. A box sizes a mark by its longest side, so a square mark (AAAI, 1:1) stops at the box height while a wide one (ECAI, 2.6:1) fills the width and reads twice as large. The width cap only bites on lockups wider than 3:1 — Dauphine (7.4:1) and ENSTA (3.6:1) stay shorter than the rest, and would need a stacked or monogram variant to match.
 
 
 `static/media/yago-mark.png` is the emblem cropped from the YAGO project logo (<https://yago-knowledge.org/assets/images/logo.png>), used to identify the YAGO 4.5 paper. The YAGO site is licensed CC BY 4.0; the entry links back to yago-knowledge.org.
