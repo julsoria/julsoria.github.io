@@ -5,6 +5,10 @@ summary: ''
 date: 2026-08-09
 type: landing
 
+# Star convention: one star per paper, on its headline moment — the acceptance where
+# there is one (AAAI), otherwise the presentation (ECML PKDD). Later appearances of the
+# same paper stay plain, as do routine talks, so the stars mark distinct milestones.
+#
 # TODO (Jules): three award dates are placed, not sourced. Gold Reviewer sits at Jul 2026
 # because that is when ICML 2026 ran (6–11 July, Seoul). The PACE grant is at Oct 2026
 # because the dossier was finalised on 8 October, so the award must post-date that. The
@@ -111,7 +115,7 @@ sections:
         Talk at the **NormaSTIC** seminar on explainability, Rouen · poster at **CEA List Days**.
         {{< /news >}}
 
-        {{< news date="Jan 2026" star="true" >}}
+        {{< news date="Jan 2026" >}}
         Presented *Formal Abductive Latent Explanations* at **AAAI 2026**, Singapore.
         {{< /news >}}
 

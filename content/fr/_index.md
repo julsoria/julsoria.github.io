@@ -95,7 +95,7 @@ sections:
         Exposé au séminaire **NormaSTIC** sur l'explicabilité, Rouen · poster aux **CEA List Days**.
         {{< /news >}}
 
-        {{< news date="Jan. 2026" star="true" >}}
+        {{< news date="Jan. 2026" >}}
         Présentation de *Formal Abductive Latent Explanations* à **AAAI 2026**, Singapour.
         {{< /news >}}
 
