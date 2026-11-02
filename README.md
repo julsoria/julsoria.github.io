@@ -44,7 +44,9 @@ Two files shadow the upstream `HugoBlox/kit` `blox` module. Re-diff both against
 
 ## Contact address
 
-The e-mail address is never emitted in harvestable form. Each homepage stores it reversed in a `data-x` attribute and assembles the `mailto:` in the browser; the visible link text stays in the `jules [dot] soria [at] cea [dot] fr` form in all cases, so the plain address only ever exists in the `href`. The profile's envelope icon in both author profiles therefore points at `#postdoc`, **not** a raw `mailto:` — a plain link there would be the site's one harvestable copy and would defeat the obfuscation. Keep it that way when editing.
+The e-mail address is never emitted at all. It appears only as the literal text `jules [dot] soria [at] cea [dot] fr`, styled as a monospace chip so it reads as an address to copy rather than a link. There is no `mailto:`, and no encoded copy of the address anywhere in the HTML — an earlier version stored it reversed in a `data-x` attribute and assembled the link in JavaScript, which is no longer needed.
+
+The profile's envelope icon in both author profiles points at the `#postdoc` contact block, **not** a `mailto:`. Keep it that way: a plain link there would reintroduce the only harvestable copy of the address.
 
 ## Third-party assets
 

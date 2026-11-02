@@ -59,28 +59,23 @@ sections:
     content:
       title: ''
       text: |-
+        <style>
+        /* Styled as a literal string, not a link: monospace and a faint chip so it reads
+           unmistakably as an address to copy, with no hover/underline affordance. */
+        .eml{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+          font-size:.92em;white-space:nowrap;background:rgba(120,120,120,.14);
+          border-radius:5px;padding:.1rem .45rem}
+        </style>
+
         <div style="border:1px solid rgba(37,99,235,.35);border-left:4px solid #2563eb;
           border-radius:10px;padding:1.1rem 1.4rem;background:rgba(37,99,235,.06)">
           <strong>I am currently looking for post-doc positions.</strong>
           I work on formal explainability and trustworthy machine learning. I would be glad to
           hear from groups working on formal methods for ML, interpretability, or the
           verification of learned components —
-          <span class="eml" data-x="rf.aec@airos.seluj">jules [dot] soria [at] cea [dot] fr</span>.
+          <span class="eml">jules [dot] soria [at] cea [dot] fr</span>.
         </div>
 
-        <script>
-        /* The address never appears in the served HTML in harvestable form: `data-x` holds it
-           reversed, and the mailto: link is assembled in the browser. The link text stays in
-           the [dot]/[at] form, so the plain address is never rendered on screen either —
-           only the href carries it. Readers without JS see the same obfuscated text. */
-        document.querySelectorAll('.eml').forEach(function (s) {
-          var addr = s.dataset.x.split('').reverse().join('');
-          var a = document.createElement('a');
-          a.href = 'mailto:' + addr;
-          a.textContent = s.textContent;
-          s.replaceWith(a);
-        });
-        </script>
     design:
       width: wide
       columns: '1'
