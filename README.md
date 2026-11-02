@@ -23,7 +23,7 @@ Bilingual: English at the site root, French under `/fr/`. Five pages each, with 
 | What else | Where |
 |---|---|
 | Languages, per-language menus and site description | `config/_default/languages.yaml` |
-| Site title, theme, math, spacing | `config/_default/params.yaml` |
+| Site title, theme (`mode: light`), math, spacing | `config/_default/params.yaml` |
 | Site URL | `config/_default/hugo.yaml` |
 | English navigation bar | `config/_default/menus.yaml` (French menu lives in `languages.yaml`) |
 | Profile photo | `assets/media/authors/me.jpg` |
@@ -42,6 +42,7 @@ Entries are written as shortcodes, one call per entry, so there is no raw HTML t
 | `svc` | an award, grant, organising or reviewing row | `{{< svc title="Top Reviewer" badge="NeurIPS 2026" note="…" >}}` |
 | `pub` | a publication; paired, links written as markdown between the tags | `{{< pub icon="📐" title="…" authors="…" venue="…" >}}[arXiv](…)\n{{< /pub >}}` |
 | `yr` | a year or group heading | `{{< yr title="2026" first="true" >}}` |
+| `news` | a news item; paired, body written as markdown | `{{< news date="Oct 2026" star="true" >}}Awarded a **Top Reviewer** award.{{< /news >}}` |
 
 They are defined in `layouts/_shortcodes/`, each with its parameters documented at the top of the file. `talk` translates its own link label (slides / diapositives) from the page language, so the two language versions stay identical apart from prose.
 

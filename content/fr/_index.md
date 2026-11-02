@@ -63,35 +63,65 @@ sections:
     content:
       title: 'Actualités'
       text: |-
-        **Oct. 2026** — ⭐ Distinction **Top Reviewer** pour **NeurIPS 2026**.
+        {{< news date="Oct. 2026" star="true" >}}
+        Distinction **Top Reviewer** pour **NeurIPS 2026**.
+        {{< /news >}}
 
-        **Oct. 2026** — ⭐ Bourse **PACE** du CEA pour une visite de recherche dans un laboratoire européen.
+        {{< news date="Oct. 2026" star="true" >}}
+        Bourse **PACE** du CEA pour une visite de recherche dans un laboratoire européen.
+        {{< /news >}}
 
-        **Sep. 2026** — Membre du comité d'organisation des [**11èmes JDSE**](https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering), Université Paris-Saclay, 24–25 septembre.
+        {{< news date="Sep. 2026" >}}
+        Membre du comité d'organisation des [**11èmes JDSE**](https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering), Université Paris-Saclay, 24–25 septembre.
+        {{< /news >}}
 
-        **Sep. 2026** — ⭐ Présentation de *Beyond $L_2$* à **ECML PKDD 2026**, Naples.
+        {{< news date="Sep. 2026" star="true" >}}
+        Présentation de *Beyond $L_2$* à **ECML PKDD 2026**, Naples.
+        {{< /news >}}
 
-        **Juil. 2026** — ⭐ Distinction **Gold Reviewer** pour **ICML 2026**.
+        {{< news date="Juil. 2026" star="true" >}}
+        Distinction **Gold Reviewer** pour **ICML 2026**.
+        {{< /news >}}
 
-        **Juil. 2026** — Exposé à **CAp & RFIAP 2026**, Montpellier.
+        {{< news date="Juil. 2026" >}}
+        Exposé à **CAp & RFIAP 2026**, Montpellier.
+        {{< /news >}}
 
-        **Juin 2026** — Exposé à l'atelier **NeuroSym4MLLM × EXPLAIN'AI**.
+        {{< news date="Juin 2026" >}}
+        Exposé à l'atelier **NeuroSym4MLLM × EXPLAIN'AI**.
+        {{< /news >}}
 
-        **Mai 2026** — Exposé au séminaire **NormaSTIC** sur l'explicabilité, Rouen · poster aux **CEA List Days**.
+        {{< news date="Mai 2026" >}}
+        Exposé au séminaire **NormaSTIC** sur l'explicabilité, Rouen · poster aux **CEA List Days**.
+        {{< /news >}}
 
-        **Jan. 2026** — ⭐ Présentation de *Formal Abductive Latent Explanations* à **AAAI 2026**, Singapour.
+        {{< news date="Jan. 2026" star="true" >}}
+        Présentation de *Formal Abductive Latent Explanations* à **AAAI 2026**, Singapour.
+        {{< /news >}}
 
-        **Nov. 2025** — ⭐ *Formal Abductive Latent Explanations* accepté à **AAAI 2026**.
+        {{< news date="Nov. 2025" star="true" >}}
+        *Formal Abductive Latent Explanations* accepté à **AAAI 2026**.
+        {{< /news >}}
 
-        **Oct. 2025** — Présentation de *Towards Abductive Latent Explanations* à **TRUST-AI @ ECAI 2025**, Bologne.
+        {{< news date="Oct. 2025" >}}
+        Présentation de *Towards Abductive Latent Explanations* à **TRUST-AI @ ECAI 2025**, Bologne.
+        {{< /news >}}
 
-        **Mars 2025** — Retour à Palaiseau après six mois au **National Institute of Informatics**, Tokyo.
+        {{< news date="Mars 2025" >}}
+        Retour à Palaiseau après six mois au **National Institute of Informatics**, Tokyo.
+        {{< /news >}}
 
-        **Sep. 2024** — ⭐ Début d'un séjour de recherche dans l'équipe d'Isao Echizen au **NII Tokyo**, sur la robustesse adverse.
+        {{< news date="Sep. 2024" star="true" >}}
+        Début d'un séjour de recherche dans l'équipe d'Isao Echizen au **NII Tokyo**, sur la robustesse adverse.
+        {{< /news >}}
 
-        **Juil. 2024** — Présentation de *YAGO 4.5* à **SIGIR 2024**, Washington DC.
+        {{< news date="Juil. 2024" >}}
+        Présentation de *YAGO 4.5* à **SIGIR 2024**, Washington DC.
+        {{< /news >}}
 
-        **Nov. 2023** — ⭐ Début de ma thèse au **CEA List**, Université Paris-Saclay.
+        {{< news date="Nov. 2023" star="true" >}}
+        Début de ma thèse au **CEA List**, Université Paris-Saclay.
+        {{< /news >}}
     design:
       width: wide
       columns: '1'

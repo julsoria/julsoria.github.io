@@ -1,0 +1,15 @@
+{{/* One news item. Paired, so the body is written as ordinary markdown:
+
+       {{< news date="Oct 2026" star="true" >}}
+       Awarded a **Top Reviewer** award for **NeurIPS 2026**.
+       {{< /news >}}
+
+     Laid out as a three-column grid — date | star | body — so every body starts at the
+     same x whatever the month is called and whether or not the item is starred. Writing
+     the date inline would make "May 2026" and "Sep. 2026" push their text to different
+     places. */}}
+<div class="nw">
+  <div class="nw-d">{{ .Get "date" }}</div>
+  <div class="nw-s">{{ if .Get "star" }}⭐{{ end }}</div>
+  <div class="nw-b">{{ .Page.RenderString (trim .Inner " \n") }}</div>
+</div>

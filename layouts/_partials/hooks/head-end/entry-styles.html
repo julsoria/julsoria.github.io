@@ -50,6 +50,21 @@
 .publist .yr{margin-top:2.5rem}
 @media(max-width:640px){.publist .icon{flex-basis:2.25rem;width:2.25rem;font-size:1.6rem}}
 
+/* ---- news list: fixed date and star columns so every body aligns ------ */
+.nw{display:grid;grid-template-columns:5.6rem 1.6rem 1fr;align-items:baseline;
+  margin:0 0 .85rem}
+.nw-d{font-weight:700;white-space:nowrap}
+.nw-s{text-align:center;line-height:1;
+  font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji","Twemoji Mozilla",sans-serif}
+.nw-b{min-width:0}
+.nw-b p{margin:0}
+/* French month labels are wider ("Juil.", "Août") */
+:lang(fr) .nw{grid-template-columns:6.4rem 1.6rem 1fr}
+@media(max-width:640px){
+  .nw{grid-template-columns:1.6rem 1fr;row-gap:.15rem}
+  .nw-d{grid-column:1 / -1}
+}
+
 /* ---- contact address: literal text, not a link ------------------------ */
 .eml{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
   font-size:.92em;white-space:nowrap;background:rgba(120,120,120,.14);
