@@ -51,8 +51,8 @@
 @media(max-width:640px){.publist .icon{flex-basis:2.25rem;width:2.25rem;font-size:1.6rem}}
 
 /* ---- divider between the contact box and the news list --------------- */
-.sep{border:0;height:1px;width:clamp(3rem,18%,8rem);margin:0 auto;
-  background:currentColor;opacity:.22}
+.sep{border:0;height:2px;width:clamp(4rem,20%,9rem);margin:2.5rem auto 0;
+  border-radius:2px;background:currentColor;opacity:.4}
 
 /* ---- news list: fixed date and star columns so every body aligns ------ */
 .nw{display:grid;grid-template-columns:5.6rem 1.6rem 1fr;align-items:baseline;
@@ -81,6 +81,29 @@
 .core{font-size:.78em;font-weight:600;letter-spacing:.02em;font-style:normal;
   border:1px solid rgba(120,120,120,.4);border-radius:999px;
   padding:.05rem .45rem;margin-left:.4rem;opacity:.8;white-space:nowrap}
+
+/* CORE rank colours follow the published Google-Scholar-Orderer legend:
+   A* dark green, A green, B yellow, C grey. */
+.core-astar{border-color:rgba(21,128,61,.6);color:#15803d;background:rgba(34,197,94,.14)}
+.core-a    {border-color:rgba(22,163,74,.5);color:#16a34a;background:rgba(34,197,94,.10)}
+.core-b    {border-color:rgba(202,138,4,.55);color:#a16207;background:rgba(234,179,8,.12)}
+.core-c    {border-color:rgba(120,120,120,.5);color:#6b7280;background:rgba(120,120,120,.10)}
+.dark .core-astar{color:#4ade80}
+.dark .core-a{color:#86efac}
+.dark .core-b{color:#fde047}
+.dark .core-c{color:#d1d5db}
+
+/* link row: small inline glyph before each label */
+.publist .l a{display:inline-flex;align-items:center;gap:.28rem}
+.publist .l svg.li{width:.95em;height:.95em;flex:none}
+
+/* right-hand venue logo column */
+.publist .pub{align-items:flex-start}
+.publist .vlogo{flex:0 0 5.5rem;display:flex;justify-content:flex-end;padding-top:.15rem}
+.publist .vlogo img{max-width:5.5rem;max-height:2.6rem;width:auto;height:auto;margin:0;
+  object-fit:contain}
+.dark .publist .vlogo img{filter:brightness(0) invert(1);opacity:.85}
+@media(max-width:640px){.publist .vlogo{display:none}}
 
 /* ---- contact address: literal text, not a link ------------------------ */
 .eml{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
