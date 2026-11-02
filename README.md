@@ -42,6 +42,7 @@ Entries are written as shortcodes, one call per entry, so there is no raw HTML t
 | `svc` | an award, grant, organising or reviewing row | `{{< svc title="Top Reviewer" badge="NeurIPS 2026" note="…" >}}` |
 | `pub` | a publication; paired, links written as markdown between the tags | `{{< pub icon="📐" title="…" authors="…" venue="…" >}}[arXiv](…)\n{{< /pub >}}` |
 | `yr` | a year or group heading | `{{< yr title="2026" first="true" >}}` |
+| `pubfilter` | the Conferences / Workshops filter buttons; place once above the list | `{{< pubfilter >}}` |
 | `news` | a news item; paired, body written as markdown | `{{< news date="Oct 2026" star="true" >}}Awarded a **Top Reviewer** award.{{< /news >}}` |
 
 They are defined in `layouts/_shortcodes/`, each with its parameters documented at the top of the file. `talk` translates its own link label (slides / diapositives) from the page language, so the two language versions stay identical apart from prose.

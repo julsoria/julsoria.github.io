@@ -52,9 +52,8 @@ sections:
       title: ''
       text: |-
         <p style="text-align:center;opacity:.85">
-          <strong>Research interests</strong> &nbsp;·&nbsp; Formal explainable AI &nbsp;·&nbsp;
-          Abductive explanations &nbsp;·&nbsp; Case-based reasoning networks &nbsp;·&nbsp;
-          Interpretable machine learning &nbsp;·&nbsp; Trustworthy AI
+          <strong>Research interests</strong> &nbsp;·&nbsp; Formal explainable AI
+          &nbsp;·&nbsp; Interpretable machine learning &nbsp;·&nbsp; Trustworthy AI
         </p>
     design:
       width: wide
@@ -74,6 +73,7 @@ sections:
           <span class="eml">jules [dot] soria [at] cea [dot] fr</span>.
         </div>
 
+        <hr class="sep">
     design:
       width: wide
       columns: '1'

@@ -64,11 +64,10 @@ sections:
         {{< yr title="Autres lieux" >}}
 
         <div class="note">
-          J'ai également présenté mes travaux de thèse dans les cadres suivants, sans en avoir
-          conservé les dates ni les titres exacts : l'atelier <strong>P-AI FM</strong>, les
-          réunions du projet <strong>PEPR SAIF</strong>, ainsi que les groupes de travail
-          <strong>GT ECLAIRE</strong>, <strong>GT EXPLICON</strong> et
-          <strong>GT XAI4U</strong> (Calais 2024, Toulouse 2025).
+          Également présenté à l'atelier <strong>P-AI FM</strong>, aux réunions du projet
+          <strong>PEPR SAIF</strong>, et aux groupes de travail <strong>GT ECLAIRE</strong>,
+          <strong>GT EXPLICON</strong> et <strong>GT XAI4U</strong> (Calais 2024,
+          Toulouse 2025).
         </div>
 
         </div>

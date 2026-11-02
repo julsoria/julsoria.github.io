@@ -32,9 +32,8 @@ sections:
       title: ''
       text: |-
         <p style="text-align:center;opacity:.85">
-          <strong>Thèmes de recherche</strong> &nbsp;·&nbsp; IA explicable formelle &nbsp;·&nbsp;
-          Explications abductives &nbsp;·&nbsp; Réseaux à raisonnement par cas &nbsp;·&nbsp;
-          Apprentissage interprétable &nbsp;·&nbsp; IA de confiance
+          <strong>Thèmes de recherche</strong> &nbsp;·&nbsp; IA explicable formelle
+          &nbsp;·&nbsp; Apprentissage interprétable &nbsp;·&nbsp; IA de confiance
         </p>
     design:
       width: wide
@@ -54,6 +53,7 @@ sections:
           <span class="eml">jules [dot] soria [at] cea [dot] fr</span>.
         </div>
 
+        <hr class="sep">
     design:
       width: wide
       columns: '1'

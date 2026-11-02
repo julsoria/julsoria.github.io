@@ -81,10 +81,8 @@ sections:
         {{< yr title="Other venues" >}}
 
         <div class="note">
-          I have also presented my thesis work at the venues below. I have not kept a record of
-          the exact dates or titles for these, so they are listed without them:
-          the <strong>P-AI FM</strong> workshop, the <strong>PEPR SAIF</strong> project
-          meetings, and the French working groups <strong>GT ECLAIRE</strong>,
+          Also presented at the <strong>P-AI FM</strong> workshop, at <strong>PEPR SAIF</strong>
+          project meetings, and to the working groups <strong>GT ECLAIRE</strong>,
           <strong>GT EXPLICON</strong> and <strong>GT XAI4U</strong> (Calais 2024,
           Toulouse 2025).
         </div>

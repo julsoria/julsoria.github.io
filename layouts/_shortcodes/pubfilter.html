@@ -1,0 +1,11 @@
+{{/* Filter buttons for the publication list. Place once, directly above the list.
+
+     Works on the data-type attribute that `pub` writes, and hides any year heading whose
+     entries are all filtered out. With JavaScript off the buttons never appear, so the
+     full list stays visible. */}}
+{{- $fr := eq .Page.Language.Lang "fr" -}}
+<div class="pubfilter" hidden>
+  <button type="button" data-f="all" class="on">{{ if $fr }}Tout{{ else }}All{{ end }}</button>
+  <button type="button" data-f="conference">{{ if $fr }}Conférences{{ else }}Conferences{{ end }}</button>
+  <button type="button" data-f="workshop">{{ if $fr }}Ateliers{{ else }}Workshops{{ end }}</button>
+</div>

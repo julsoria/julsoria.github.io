@@ -1,15 +1,18 @@
 {{/* A publication. Paired, so the links are written as ordinary markdown inside:
 
-       {{< pub icon="📐" title="Beyond $L_2$: …"
+       {{< pub icon="📐" type="conference" core="A"
+               title="Beyond $L_2$: …"
                authors="Jules Soria, Alban Grastien, …"
-               venue="ECML PKDD 2026 · Naples, Italy" >}}
+               venue="ECML PKDD 2026, Research Track · Naples, Italy" >}}
        [project page](https://beyond-l2.github.io/) [arXiv](https://arxiv.org/abs/2608.16773)
        {{< /pub >}}
 
-     icon  an emoji, or img="/media/foo.png" for a logo. Omit both to keep the
-           column empty so entries stay aligned.
-     alt   alt text, used with img */}}
-<div class="pub">
+     icon  an emoji, or img="/media/foo.png" for a logo. Omit both to keep the column
+           empty so entries stay aligned.
+     alt   alt text, used with img
+     type  "conference" or "workshop" — drives the filter buttons ({{< pubfilter >}})
+     core  CORE rank of the venue, shown as a badge, e.g. "A*" or "A" */}}
+<div class="pub"{{ with .Get "type" }} data-type="{{ . }}"{{ end }}>
   {{- with .Get "img" }}
   <div class="icon"><img src="{{ . }}" alt="{{ $.Get "alt" | default "" }}" loading="lazy"></div>
   {{- else }}
@@ -18,7 +21,8 @@
   <div class="meta">
     <div class="t">{{ .Get "title" | .Page.RenderString }}</div>
     <div class="a">{{ .Get "authors" | safeHTML }}</div>
-    <div class="v">{{ .Get "venue" | safeHTML }}</div>
+    <div class="v">{{ .Get "venue" | safeHTML }}{{ with .Get "core" }}
+      <span class="core" title="{{ if eq $.Page.Language.Lang "fr" }}Rang CORE du lieu de publication{{ else }}CORE rank of the venue{{ end }}">CORE {{ . }}</span>{{ end }}</div>
     {{- with trim .Inner " \n" }}
     <div class="l">{{ $.Page.RenderString . }}</div>
     {{- end }}

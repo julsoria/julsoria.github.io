@@ -50,6 +50,10 @@
 .publist .yr{margin-top:2.5rem}
 @media(max-width:640px){.publist .icon{flex-basis:2.25rem;width:2.25rem;font-size:1.6rem}}
 
+/* ---- divider between the contact box and the news list --------------- */
+.sep{border:0;height:1px;width:clamp(3rem,18%,8rem);margin:0 auto;
+  background:currentColor;opacity:.22}
+
 /* ---- news list: fixed date and star columns so every body aligns ------ */
 .nw{display:grid;grid-template-columns:5.6rem 1.6rem 1fr;align-items:baseline;
   margin:0 0 .85rem}
@@ -65,8 +69,51 @@
   .nw-d{grid-column:1 / -1}
 }
 
+/* ---- publication filter + CORE badge ---------------------------------- */
+.pubfilter{display:flex;flex-wrap:wrap;gap:.4rem;margin:0 0 1.75rem}
+.pubfilter button{font:inherit;font-size:.86em;font-weight:600;cursor:pointer;
+  padding:.2rem .7rem;border-radius:999px;background:transparent;
+  border:1px solid rgba(120,120,120,.45);color:inherit;opacity:.75;
+  transition:opacity .15s,border-color .15s}
+.pubfilter button:hover{opacity:1}
+.pubfilter button.on{opacity:1;border-color:#2563eb;color:#2563eb}
+.dark .pubfilter button.on{border-color:#93c5fd;color:#93c5fd}
+.core{font-size:.78em;font-weight:600;letter-spacing:.02em;font-style:normal;
+  border:1px solid rgba(120,120,120,.4);border-radius:999px;
+  padding:.05rem .45rem;margin-left:.4rem;opacity:.8;white-space:nowrap}
+
 /* ---- contact address: literal text, not a link ------------------------ */
 .eml{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
   font-size:.92em;white-space:nowrap;background:rgba(120,120,120,.14);
   border-radius:5px;padding:.1rem .45rem}
 </style>
+
+<script>
+/* Publication filter. Reveals its own buttons only when scripting is available, so the
+   unfiltered list is what a reader without JS gets. Year headings whose entries are all
+   filtered out are hidden too, otherwise a year could sit above nothing. */
+document.addEventListener('DOMContentLoaded', function () {
+  var bar = document.querySelector('.pubfilter');
+  var list = document.querySelector('.publist');
+  if (!bar || !list) return;
+  bar.hidden = false;
+  var pubs = [].slice.call(list.querySelectorAll('.pub'));
+  var heads = [].slice.call(list.querySelectorAll('h3'));
+  bar.addEventListener('click', function (e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    var want = btn.dataset.f;
+    bar.querySelectorAll('button').forEach(function (b) { b.classList.toggle('on', b === btn); });
+    pubs.forEach(function (p) {
+      p.hidden = !(want === 'all' || p.dataset.type === want);
+    });
+    heads.forEach(function (h) {
+      var any = false;
+      for (var n = h.nextElementSibling; n && n.tagName !== 'H3'; n = n.nextElementSibling) {
+        if (n.classList.contains('pub') && !n.hidden) { any = true; break; }
+      }
+      h.hidden = !any;
+    });
+  });
+});
+</script>
