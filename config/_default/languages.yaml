@@ -1,22 +1,41 @@
 # Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
+#   One section per language. English is the default and is served from the site root;
+#   French is served from /fr/ (defaultContentLanguageInSubdir is false in hugo.yaml).
+#
+#   Author profiles live in data/authors/ and are NOT language-aware, so each language
+#   points its blocks at its own profile: `me` for English, `me-fr` for French. Keep the
+#   two in sync when editing bio, education or experience.
 
-# Default language
 en:
   locale: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  label: English
+  weight: 1
+  contentDir: content/en
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  locale: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+fr:
+  locale: fr-fr
+  label: Français
+  weight: 2
+  contentDir: content/fr
+  title: Jules Soria
+  params:
+    description: "Jules Soria est doctorant au CEA-List, Université Paris-Saclay. Ses
+      travaux portent sur l'IA de confiance : des explications formelles et interprétables
+      pour les réseaux à prototypes."
+  menu:
+    main:
+      - name: À propos
+        url: /fr/
+        weight: 10
+      - name: Publications
+        url: /fr/publications/
+        weight: 20
+      - name: Exposés
+        url: /fr/talks/
+        weight: 30
+      - name: Enseignement
+        url: /fr/teaching/
+        weight: 40
+      - name: CV
+        url: /fr/cv/
+        weight: 50

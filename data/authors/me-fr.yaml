@@ -1,0 +1,112 @@
+# French counterpart of me.yaml. Hugo data files are not language-aware, so the French
+# pages point their blocks at `username: me-fr`. Keep the two files in step: any change to
+# bio, education or experience here must be mirrored in me.yaml, and vice versa.
+schema: hugoblox/author/v1
+slug: me-fr
+is_owner: true
+
+name:
+  display: Jules Soria
+  given: Jules
+  family: Soria
+
+role: Doctorant en IA de confiance
+
+bio: |
+  Je suis doctorant en troisième année au CEA-List, Université Paris-Saclay, où je travaille
+  sur la confiance que l'on peut accorder à l'intelligence artificielle, par le prisme de
+  l'interprétabilité et de l'IA explicable formelle.
+
+  Ma recherche pose une question simple : à quelles conditions l'explication d'un modèle
+  est-elle *garantie* ? Les réseaux à raisonnement par cas, comme ProtoPNet, sont réputés
+  « interprétables par construction », et pourtant leurs explications peuvent induire en
+  erreur : deux entrées peuvent recevoir la même explication tout en étant classées
+  différemment. Je développe les **explications latentes abductives (ALE)** — des conditions
+  suffisantes sur la représentation latente d'un modèle qui impliquent démontrablement sa
+  prédiction — à la rencontre de l'IA explicable formelle et de l'apprentissage à prototypes.
+
+affiliations:
+  - name: Université Paris-Saclay, CEA, List
+    url: https://list.cea.fr/en/
+
+links:
+  # Renvoie vers le bloc de contact de la page d'accueil plutôt qu'un `mailto:` brut, qui
+  # serait la seule copie récoltable de l'adresse. Voir le README.
+  - icon: at-symbol
+    url: '/fr/#postdoc'
+    label: M'écrire
+  - icon: brands/github
+    url: https://github.com/julsoria
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=1Qctec0AAAAJ
+  - icon: academicons/orcid
+    url: https://orcid.org/0009-0009-6730-7406
+
+interests:
+  - IA explicable formelle
+  - Explications abductives
+  - Réseaux à raisonnement par cas
+  - Apprentissage interprétable
+  - IA de confiance
+
+education:
+  - degree: Doctorat en informatique, données et IA
+    institution: Université Paris-Saclay — CEA List (ED STIC)
+    year: 2023 – aujourd'hui
+    start: 2023-11-01
+    summary: |
+      Thèse : *Explications de confiance pour l'intelligence artificielle*.
+      Dirigée par Daniela Cancila, encadrée par Zakaria Chihani, Julien Girard-Satabin et
+      Romain Xu-Darme.
+  - degree: Master Data & Intelligence Artificielle
+    institution: Institut Polytechnique de Paris
+    year: 2022 – 2023
+    start: 2022-09-01
+    end: 2023-10-31
+  - degree: Diplôme d'Ingénieur (ISMIN)
+    institution: Mines Saint-Étienne
+    year: 2020 – 2023
+    start: 2020-09-01
+    end: 2023-06-30
+  - degree: Classe préparatoire MPSI / MP*
+    institution: Lycée Janson de Sailly, Paris
+    year: 2018 – 2020
+    start: 2018-09-01
+    end: 2020-06-30
+
+experience:
+  - role: Doctorant
+    org: CEA List, Université Paris-Saclay
+    start: 2023-11-01
+    summary: |
+      Explications formelles et interprétables pour les réseaux de neurones à prototypes.
+      Contributeur de [CaBRNet](https://github.com/aiser-team/cabrnet), une bibliothèque
+      open source pour les modèles à raisonnement par cas. Travaux soutenus par le projet
+      SAIF (France 2030, ANR-23-PEIA-0006).
+  - role: Stage de recherche
+    org: ELab, National Institute of Informatics (NII), Tokyo
+    start: 2024-09-01
+    end: 2025-03-31
+    summary: |
+      Génération et détection d'attaques adverses, et purificateurs robustes aux
+      adversaires adaptatifs. Accueilli par Isao Echizen, avec Hanrui Wang et Futa Waseda.
+  - role: Stage de recherche
+    org: Équipe TAU, Inria Saclay
+    start: 2023-04-01
+    end: 2023-09-30
+    summary: |
+      Vers des simulations causales réalistes par modèles génératifs.
+      Encadré par Alessandro Leite et Audrey Poinsot.
+  - role: Stage d'ingénieur de recherche
+    org: Barco HealthCare, Courtrai
+    start: 2022-03-01
+    end: 2022-07-31
+    summary: |
+      Audit de robustesse et d'équité d'un détecteur de cancers cutanés par apprentissage
+      profond.
+  - role: Assistant de recherche
+    org: Biorobotics Lab, CNRS / ISM, Aix-Marseille Université
+    start: 2021-01-01
+    end: 2021-01-31
+    summary: |
+      Odométrie bio-inspirée pour drones autonomes, avec Lucia Bergantin et Franck Ruffier.
