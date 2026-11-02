@@ -26,7 +26,7 @@ Bilingual: English at the site root, French under `/fr/`. Five pages each, with 
 | Site title, theme, math, spacing | `config/_default/params.yaml` |
 | Site URL | `config/_default/hugo.yaml` |
 | English navigation bar | `config/_default/menus.yaml` (French menu lives in `languages.yaml`) |
-| Profile photo | `assets/media/authors/me.png` |
+| Profile photo | `assets/media/authors/me.jpg` |
 | Favicon | `assets/media/icon.png` — see below |
 | Talk slides | `static/uploads/slides/` |
 | Publication icons | inline emoji in the publications pages, matching each paper's project-page favicon (🍺 formal-ale, 📐 beyond-l2); YAGO uses `static/media/yago-mark.png` |
@@ -74,7 +74,7 @@ Talk slides in `static/uploads/slides/` are recompressed with `gs -dPDFSETTINGS=
 
 ## Pending
 
-- `assets/media/authors/me.png` is a **placeholder monogram** — drop in a real headshot at the same path (square, ideally ≥ 800×800). Nothing else needs changing: the French profile resolves its avatar as `media/authors/me-fr.*`, and `config/_default/module.yaml` mounts the same file at that second path rather than keeping two copies. Hugo serves a content-hashed filename, so replacing it busts the cache by itself.
+- **Profile photo**: `assets/media/authors/me.jpg`, 800×800, cropped square and centred on the face. To replace it, drop in a new square image at that path — the theme resolves the avatar as `media/authors/<username>.*`, so the French profile needs `me-fr.*` too, and `config/_default/module.yaml` mounts the one real file at that second path rather than keeping two copies. Change the extension there if the new file is not a `.jpg`. Hugo serves a content-hashed filename, so replacing the image busts its own cache. Note this is **not** the favicon, which comes from `assets/media/icon.png`.
 - Clicking the photo plays one of five short animations, picked at random and never the same twice running (`layouts/_partials/hooks/head-end/avatar-interaction.html`). It is skipped entirely for anyone whose system asks for reduced motion.
 - The **Download CV** button in the homepages is commented out. Uncomment it once a redacted CV — no phone number, no home address — is placed at `static/uploads/cv.pdf`.
 - `content/en/talks.md` has a front-matter note listing two decks that could not be mapped to a venue.

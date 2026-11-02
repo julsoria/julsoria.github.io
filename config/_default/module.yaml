@@ -28,7 +28,7 @@ mounts:
   # The French profile resolves its avatar as media/authors/<username>.*, i.e. me-fr.*.
   # Mount the single real image at that second path instead of keeping two copies of the
   # photo in the repo, so swapping the headshot stays a one-file change.
-  - source: assets/media/authors/me.png
-    target: assets/media/authors/me-fr.png
+  - source: assets/media/authors/me.jpg
+    target: assets/media/authors/me-fr.jpg
   - source: assets
     target: assets
