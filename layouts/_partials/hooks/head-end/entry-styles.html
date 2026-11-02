@@ -118,6 +118,19 @@
 .dark .insts a{background:rgba(255,255,255,.92);border-radius:8px;padding:.35rem .55rem}
 @media(max-width:640px){.insts img{height:1.7rem}.insts{gap:1.1rem}}
 
+/* teaching rows that carry an institution mark */
+.entries .e-logo{display:flex;align-items:flex-start;gap:1.25rem}
+.entries .e-main{flex:1 1 auto;min-width:0}
+.entries .vlogo{flex:0 0 5rem;display:flex;justify-content:flex-end;padding-top:.1rem}
+.entries .vlogo img{max-width:5rem;max-height:2.3rem;width:auto;height:auto;margin:0;
+  object-fit:contain}
+.dark .entries .vlogo img,.dark .publist .vlogo img{
+  background:rgba(255,255,255,.92);border-radius:6px;padding:.18rem .3rem;filter:none}
+@media(max-width:640px){.entries .vlogo{display:none}}
+
+/* Zenodo's mark reads smaller than the others at the same box size */
+.publist .l a svg.li-models{width:1.3em;height:1.3em;margin:-.15em 0}
+
 /* ---- contact address: literal text, not a link ------------------------ */
 .eml{font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
   font-size:.92em;white-space:nowrap;background:rgba(120,120,120,.14);

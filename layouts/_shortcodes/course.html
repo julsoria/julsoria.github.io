@@ -1,14 +1,21 @@
 {{/* A taught course or a supervision entry. Usage:
 
        {{< course title="Advanced Deep Learning" url="https://www.lri.fr/~gcharpia/dlip/"
-                  level="M2" where="Master MVA, ENS Paris-Saclay" >}}
+                  level="M2" where="Master MVA, ENS Paris-Saclay"
+                  logo="/media/inst/mva.png" >}}
 
      url    optional; links the title
      level  optional; rendered as a pill (M2 / M1 / L3)
-     where  institution line, may contain links */}}
-<div class="e">
-  <div class="t">{{ with .Get "url" }}<a href="{{ . }}">{{ end }}{{ .Get "title" | safeHTML }}{{ if .Get "url" }}</a>{{ end }}{{ with .Get "level" }} <span class="lvl">{{ . }}</span>{{ end }}</div>
-  {{- with .Get "where" }}
-  <div class="v">{{ . | safeHTML }}</div>
+     where  institution line, may contain links
+     logo   optional; institution mark shown in the right-hand column */}}
+<div class="e{{ if .Get "logo" }} e-logo{{ end }}">
+  <div class="e-main">
+    <div class="t">{{ with .Get "url" }}<a href="{{ . }}">{{ end }}{{ .Get "title" | safeHTML }}{{ if .Get "url" }}</a>{{ end }}{{ with .Get "level" }} <span class="lvl">{{ . }}</span>{{ end }}</div>
+    {{- with .Get "where" }}
+    <div class="v">{{ . | safeHTML }}</div>
+    {{- end }}
+  </div>
+  {{- with .Get "logo" }}
+  <div class="vlogo"><img src="{{ . }}" alt="" loading="lazy"></div>
   {{- end }}
 </div>

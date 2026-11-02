@@ -52,7 +52,7 @@ sections:
       title: ''
       text: |-
         <div class="insts">
-          <a href="https://list.cea.fr/en/" title="CEA List"><img src="/media/inst/cea-list.png" alt="CEA List"></a>
+          <a href="https://list.cea.fr/en/" title="CEA List"><img src="/media/inst/cea-list.svg" alt="CEA List"></a>
           <a href="https://www.universite-paris-saclay.fr/" title="Université Paris-Saclay"><img src="/media/inst/paris-saclay.png" alt="Université Paris-Saclay"></a>
         </div>
 

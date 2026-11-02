@@ -35,6 +35,8 @@ links:
   - icon: at-symbol
     url: '/fr/#postdoc'
     label: M'écrire
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/jules-soria-5014251b8/
   - icon: brands/github
     url: https://github.com/julsoria
   - icon: academicons/google-scholar

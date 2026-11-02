@@ -70,9 +70,9 @@ The profile's envelope icon in both author profiles points at the `#postdoc` con
 
 ## Third-party assets
 
-Institution logos in `static/media/inst/` were extracted from Jules's own CSI 2026 slide deck with `pdfimages`, composed with their alpha masks and trimmed. On a dark theme both marks sit on a light chip rather than being inverted, which would wreck CEA's red block.
+Logos in `static/media/inst/` and `static/media/venues/` come from Jules's own brand-asset collection in `~/Documents/LOGOS` (CEA List, Paris-Saclay, ENSTA, CentraleSupélec, Dauphine-PSL, UGA, MVA, AAAI-26, ECAI 2025, ECML PKDD). They were trimmed and normalised to 130px tall; Dauphine's white background was made transparent, and MVA was cropped to its monogram. On a dark theme they sit on a light chip rather than being inverted.
 
-`static/media/venues/ecml-pkdd.svg` is the ECML PKDD logo from ecmlpkdd.org, shown in the right-hand column of that paper's entry via the `venuelogo` param. **AAAI and SIGIR logos are missing**: aaai.org and sigir.org both return 403 to curl and to a headless browser, so neither could be fetched. Drop a file in `static/media/venues/` and add `venuelogo="/media/venues/<file>"` to the entry.
+**SIGIR has no logo**: it is the one venue absent from `~/Documents/LOGOS`, and sigir.org returns 403 to curl and to a headless browser. Drop a file in `static/media/venues/` and add `venuelogo="/media/venues/<file>"` to the entry.
 
 
 `static/media/yago-mark.png` is the emblem cropped from the YAGO project logo (<https://yago-knowledge.org/assets/images/logo.png>), used to identify the YAGO 4.5 paper. The YAGO site is licensed CC BY 4.0; the entry links back to yago-knowledge.org.

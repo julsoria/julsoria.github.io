@@ -7,6 +7,7 @@
 
      Usage: {{ partial "icons/link" "arxiv" }} */}}
 {{- $n := . -}}
+{{- $orig := . -}}
 {{/* The publication shortcode names links by role (code, models); map those onto the
      brand glyph that represents them. */}}
 {{- $alias := dict "code" "github" "models" "zenodo" -}}
@@ -22,8 +23,8 @@
 -}}
 {{- with index $d $n -}}
   {{- if in $filled $n -}}
-<svg class="li" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="{{ . }}"/></svg>
+<svg class="li li-{{ $orig }}" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="{{ . }}"/></svg>
   {{- else -}}
-<svg class="li" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="{{ . }}"/></svg>
+<svg class="li li-{{ $orig }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="{{ . }}"/></svg>
   {{- end -}}
 {{- end -}}

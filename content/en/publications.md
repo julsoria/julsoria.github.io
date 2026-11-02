@@ -44,7 +44,7 @@ sections:
                 project="https://beyond-l2.github.io/" arxiv="https://arxiv.org/abs/2608.16773"
                 code="https://github.com/julsoria/beyond_l2" models="https://zenodo.org/records/22311315" >}}{{< /pub >}}
 
-        {{< pub icon="🍺" type="conference" core="A*" title="Formal Abductive Latent Explanations for Prototype-Based Networks"
+        {{< pub icon="🍺" type="conference" core="A*" venuelogo="/media/venues/aaai-2026.png" title="Formal Abductive Latent Explanations for Prototype-Based Networks"
                 authors="Jules Soria, Zakaria Chihani, Julien Girard-Satabin, Alban Grastien, Romain Xu-Darme, Daniela Cancila"
                 venue="AAAI 2026, Main Technical Track &middot; Singapore"
                 project="https://formal-ale.github.io/" arxiv="https://arxiv.org/abs/2511.16588"
@@ -52,7 +52,7 @@ sections:
 
         {{< yr title="2025" >}}
 
-        {{< pub type="workshop" title="Towards Abductive Latent Explanations"
+        {{< pub type="workshop" venuelogo="/media/venues/ecai-2025.png" title="Towards Abductive Latent Explanations"
                 authors="Jules Soria, Zakaria Chihani, Julien Girard-Satabin, Alban Grastien, Romain Xu-Darme, Daniela Cancila"
                 venue="TRUST-AI workshop at ECAI 2025 &middot; Bologna, Italy &middot; CEUR-WS vol. 4132, 188–199"
                 pdf="https://ceur-ws.org/Vol-4132/short34.pdf" >}}{{< /pub >}}
