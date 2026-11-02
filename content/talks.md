@@ -36,23 +36,28 @@ sections:
         <h3>2026</h3>
 
         <div class="e">
+          <div class="t">Beyond $L_2$: Generalizing Abductive Latent Explanations to Diverse Prototype-Based Architectures</div>
+          <div class="v">ECML PKDD 2026 &middot; Naples &middot; 7–11 September 2026 &middot; <a href="/uploads/slides/2026-09-ecml-pkdd-beyond-l2.pdf">slides</a></div>
+        </div>
+
+        <div class="e">
           <div class="t">Formal Abductive Latent Explanations for Prototype-Based Networks</div>
           <div class="v">CAp &amp; RFIAP 2026 &middot; Montpellier &middot; July 2026</div>
         </div>
 
         <div class="e">
           <div class="t">Formal Abductive Latent Explanations for Prototype-Based Networks</div>
-          <div class="v">NeuroSym4MLLM × EXPLAIN'AI workshop &middot; June 2026</div>
+          <div class="v">NeuroSym4MLLM × EXPLAIN'AI workshop &middot; June 2026 &middot; <a href="/uploads/slides/2026-06-neurosym4mllm-explainai.pdf">slides</a></div>
         </div>
 
         <div class="e">
           <div class="t">Formal Abductive Latent Explanations for Prototype-Based Networks</div>
-          <div class="v">NormaSTIC seminar on explainability &middot; Rouen &middot; May 2026</div>
+          <div class="v">NormaSTIC seminar on explainability &middot; Rouen &middot; May 2026 &middot; <a href="/uploads/slides/2026-05-normastic-formal-ale.pdf">slides</a></div>
         </div>
 
         <div class="e">
           <div class="t">Formal Abductive Latent Explanations for Prototype-Based Networks <em>(poster)</em></div>
-          <div class="v">CEA List Days &middot; Palaiseau &middot; May 2026</div>
+          <div class="v">CEA List Days &middot; Palaiseau &middot; May 2026 &middot; <a href="/uploads/slides/2026-05-cea-list-days-poster.pdf">slides</a></div>
         </div>
 
         <div class="e">
@@ -64,24 +69,24 @@ sections:
 
         <div class="e">
           <div class="t">Towards Abductive Latent Explanations</div>
-          <div class="v">TRUST-AI workshop at ECAI 2025 &middot; Bologna &middot; October 2025</div>
+          <div class="v">TRUST-AI workshop at ECAI 2025 &middot; Bologna &middot; October 2025 &middot; <a href="/uploads/slides/2025-10-trust-ai-ecai-towards-ale.pdf">slides</a></div>
         </div>
 
         <div class="e">
           <div class="t">Explications de confiance pour l'intelligence artificielle</div>
-          <div class="v">Journée des Thèses DILS, CEA List &middot; Palaiseau &middot; 20 &amp; 27 June 2025</div>
+          <div class="v">Journée des Thèses DILS, CEA List &middot; Palaiseau &middot; 20 &amp; 27 June 2025 &middot; <a href="/uploads/slides/2025-06-journee-des-theses.pdf">slides</a></div>
         </div>
 
         <h3 class="yr">2024</h3>
 
         <div class="e">
           <div class="t">Crafting Adversarial Examples Using Linear Regions</div>
-          <div class="v">Workshop Fondements Mathématiques de l'IA &middot; 17 June 2024</div>
+          <div class="v">Workshop Fondements Mathématiques de l'IA &middot; 17 June 2024 &middot; <a href="/uploads/slides/2024-06-fondements-adversarial-linear-regions.pdf">slides</a></div>
         </div>
 
         <div class="e">
           <div class="t">Explications de confiance pour l'intelligence artificielle</div>
-          <div class="v">Journée des Thèses DILS, CEA List &middot; Palaiseau &middot; 27–28 June 2024</div>
+          <div class="v">Journée des Thèses DILS, CEA List &middot; Palaiseau &middot; 27–28 June 2024 &middot; <a href="/uploads/slides/2024-06-journee-des-theses.pdf">slides</a></div>
         </div>
 
         <div class="note">

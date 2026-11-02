@@ -67,11 +67,28 @@ sections:
           <div class="v">Awarded to reviewers recognised for the quality of their reviews</div>
         </div>
 
+        <div class="e">
+          <div class="t">Plan of Action for Cooperation in Europe (PACE) <span class="badge">CEA 2026</span></div>
+          <div class="v">Competitive CEA mobility grant for a short research visit to an EU laboratory, awarded by a CEA selection committee &middot; &euro;1,200</div>
+        </div>
+
         <h3 class="grp">Organizing</h3>
 
         <div class="e">
           <div class="t"><a href="https://www.universite-paris-saclay.fr/en/jdse-junior-conference-datascience-and-engineering">Junior Conference on Data Science and Engineering (JDSE 2026)</a></div>
           <div class="v">Organizing committee &middot; 11th edition &middot; Université Paris-Saclay, Orsay &middot; 24–25 September 2026</div>
+        </div>
+
+        <h3 class="grp">Funding</h3>
+
+        <div class="e">
+          <div class="t">SAIF — Safe Artificial Intelligence through Formal methods</div>
+          <div class="v">PEPR project, France 2030 &middot; ANR-23-PEIA-0006 &middot; supports this thesis</div>
+        </div>
+
+        <div class="e">
+          <div class="t">FactoryIA supercomputer</div>
+          <div class="v">Compute for the experiments, financed by the Île-de-France Regional Council</div>
         </div>
 
         <h3 class="grp">Reviewing</h3>
