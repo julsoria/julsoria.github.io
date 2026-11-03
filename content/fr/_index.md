@@ -36,7 +36,7 @@ sections:
           <a href="https://www.universite-paris-saclay.fr/" title="Université Paris-Saclay" style="--ar:2.85"><img class="lt" src="/media/inst/paris-saclay.png" alt="Université Paris-Saclay"><img class="dk" src="/media/inst/paris-saclay-dark.png" alt="Université Paris-Saclay"></a>
         </div>
 
-        <p style="text-align:center;opacity:.85">
+        <p class="rint">
           <strong>Thèmes de recherche</strong> &nbsp;·&nbsp; IA explicable formelle
           &nbsp;·&nbsp; Apprentissage interprétable &nbsp;·&nbsp; IA de confiance
         </p>

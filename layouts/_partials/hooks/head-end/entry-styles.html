@@ -135,8 +135,11 @@
    logo is added. Equal flex values would give equal WIDTHS and therefore
    unequal heights, which is the thing to avoid here.
    --ar must match the file: cea-list 1135.534/570.492, paris-saclay 370/130. */
+/* max-width keeps the row a step narrower than the text column: at 100% the two
+   marks read louder than the name above them. The logos are sized by the row,
+   so this one number is the only size control. */
 .insts{display:flex;flex-wrap:nowrap;align-items:center;justify-content:center;
-  gap:2rem;margin:.25rem 0 0}
+  gap:2rem;max-width:85%;margin:.25rem auto 0}
 .insts a{flex:var(--ar,2) 1 0%;display:block;line-height:0;
   opacity:.85;transition:opacity .15s}
 .insts a:hover{opacity:1}
@@ -148,7 +151,21 @@
 .insts .dk{display:none}
 .dark .insts .lt{display:none}
 .dark .insts .dk{display:block}
-@media(max-width:640px){.insts{gap:1.1rem}}
+@media(max-width:640px){.insts{gap:1.1rem;max-width:100%}}
+
+/* research-interest keywords, directly under the logos. The top margin sets the
+   gap to the marks; the gap down to the post-doc box is deliberately about
+   twice that, so the keywords read as part of the identity block above them
+   rather than floating between the two. Both gaps are tuned together with the
+   #interests / #postdoc section padding below. */
+.rint{text-align:center;opacity:.85;font-size:1.1em;margin:2.25rem 0 0}
+
+/* Section padding is 4rem top and bottom from the theme, so two adjacent
+   markdown blocks sit 8rem apart -- far too much between the keywords and the
+   post-doc box. Trim both sides to 4.5rem in total. #postdoc's padding-BOTTOM
+   is left alone: .sep's negative bottom margin is balanced against it. */
+#interests{padding-bottom:1.5rem}
+#postdoc{padding-top:3rem}
 
 /* teaching rows that carry an institution mark */
 .entries .e-logo{display:flex;align-items:flex-start;gap:1.25rem}
