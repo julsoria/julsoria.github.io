@@ -76,6 +76,10 @@ On a dark theme, the publication and teaching marks sit on a light chip rather t
 
 Logos are aligned on a common **height** (3rem) with a 9rem width cap, rather than fitted into a shared box. A box sizes a mark by its longest side, so a square mark (AAAI, 1:1) stops at the box height while a wide one (ECAI, 2.6:1) fills the width and reads twice as large. The width cap only bites on lockups wider than 3:1 — Dauphine (7.4:1) and ENSTA (3.6:1) stay shorter than the rest, and would need a stacked or monogram variant to match.
 
+The two marks under the homepage bio are sized differently again: they fill the column. Each is a flex item whose grow factor is its own aspect ratio, passed from the markup as `style="--ar:…"`, so the widths come out proportional to the aspects and both land on the same height at any width — no media query, and it keeps working if a third logo is added. **Keep `--ar` in step with the file** (`cea-list` 1135.534/570.492, `paris-saclay` 370/130): a wrong value silently makes that logo a different height from its neighbour.
+
+The dark-mode chip sets `box-sizing: content-box` with matching negative margins. Tailwind's preflight makes everything border-box, so the chip's padding was otherwise taken out of `max-width`/`max-height` and dark mode rendered every mark at 42px against light mode's 48px.
+
 
 `static/media/yago-mark.png` is the emblem cropped from the YAGO project logo (<https://yago-knowledge.org/assets/images/logo.png>), used to identify the YAGO 4.5 paper. The YAGO site is licensed CC BY 4.0; the entry links back to yago-knowledge.org.
 

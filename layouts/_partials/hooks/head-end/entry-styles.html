@@ -123,20 +123,27 @@
 @media(max-width:640px){.publist .vlogo{display:none}}
 
 /* ---- institution logos under the bio --------------------------------- */
-.insts{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;
-  gap:1.6rem;margin:.25rem 0 0}
-.insts a{display:inline-flex;align-items:center;line-height:0;
+/* The row fills its column. Each logo is a flex item whose grow factor is its
+   own aspect ratio, passed from the markup as --ar, so the widths come out
+   proportional to the aspects and both marks land on the SAME height at any
+   container width -- no media query needed, and it still works if a third
+   logo is added. Equal flex values would give equal WIDTHS and therefore
+   unequal heights, which is the thing to avoid here.
+   --ar must match the file: cea-list 1135.534/570.492, paris-saclay 370/130. */
+.insts{display:flex;flex-wrap:nowrap;align-items:center;justify-content:center;
+  gap:2rem;margin:.25rem 0 0}
+.insts a{flex:var(--ar,2) 1 0%;display:block;line-height:0;
   opacity:.85;transition:opacity .15s}
 .insts a:hover{opacity:1}
-.insts img{height:3rem;width:auto;max-width:9rem;margin:0}
+.insts img{width:100%;height:auto;margin:0}
 /* Both marks ship an official reversed variant for dark backgrounds, so swap the
    file rather than filtering the artwork: CEA keeps its red block and only the
    wordmark goes white, which no invert could reproduce. Both <img> are in the
    markup and one is always display:none, so neither is announced twice. */
 .insts .dk{display:none}
 .dark .insts .lt{display:none}
-.dark .insts .dk{display:inline}
-@media(max-width:640px){.insts img{height:2.2rem}.insts{gap:1.1rem}}
+.dark .insts .dk{display:block}
+@media(max-width:640px){.insts{gap:1.1rem}}
 
 /* teaching rows that carry an institution mark */
 .entries .e-logo{display:flex;align-items:flex-start;gap:1.25rem}
@@ -145,8 +152,14 @@
 .entries .vlogo{flex:0 0 9rem;display:flex;justify-content:flex-end;padding-top:.1rem}
 .entries .vlogo img{max-width:9rem;max-height:3rem;width:auto;height:auto;margin:0;
   object-fit:contain}
+/* The chip must not shrink the logo. Tailwind's preflight makes everything
+   border-box, so this padding was coming out of max-width/max-height and dark
+   mode rendered every mark at 42px against light mode's 48px. content-box puts
+   the padding outside the constrained area, and the matching negative margins
+   keep the element's footprint identical to light mode, so nothing shifts. */
 .dark .entries .vlogo img,.dark .publist .vlogo img{
-  background:rgba(255,255,255,.92);border-radius:6px;padding:.18rem .3rem;filter:none}
+  background:rgba(255,255,255,.92);border-radius:6px;
+  padding:.18rem .3rem;margin:-.18rem -.3rem;box-sizing:content-box;filter:none}
 @media(max-width:640px){.entries .vlogo{display:none}}
 
 /* Zenodo's mark reads smaller than the others at the same box size */
