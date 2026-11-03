@@ -69,8 +69,7 @@ sections:
     content:
       title: ''
       text: |-
-        <div style="border:1px solid rgba(37,99,235,.35);border-left:4px solid #2563eb;
-          border-radius:10px;padding:1.1rem 1.4rem;background:rgba(37,99,235,.06)">
+        <div class="postdoc">
           <strong>I am currently looking for post-doc positions.</strong>
           I work on formal explainability and trustworthy machine learning. I would be glad to
           hear from groups working on formal methods for ML, interpretability, or the
@@ -105,7 +104,7 @@ sections:
         {{< /news >}}
 
         {{< news date="Jul 2026" star="true" >}}
-        Awarded a **Gold Reviewer** badge for **ICML 2026**.
+        Awarded a **<span class="gold">Gold</span> Reviewer** badge for **ICML 2026**.
         {{< /news >}}
 
         {{< news date="Jul 2026" >}}

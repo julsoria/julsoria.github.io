@@ -31,7 +31,7 @@ sections:
         {{< svc title="Top Reviewer" badge="NeurIPS 2026"
                 note="Distinction attribuée aux relecteurs pour la qualité de leurs relectures" >}}
 
-        {{< svc title="Gold Reviewer" badge="ICML 2026"
+        {{< svc title=`<span class="gold">Gold</span> Reviewer` badge="ICML 2026"
                 note="Distinction attribuée aux relecteurs pour la qualité de leurs relectures" >}}
 
         {{< svc title="Plan of Action for Cooperation in Europe (PACE)" badge="CEA 2026"

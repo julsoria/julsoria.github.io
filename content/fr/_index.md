@@ -49,8 +49,7 @@ sections:
     content:
       title: ''
       text: |-
-        <div style="border:1px solid rgba(37,99,235,.35);border-left:4px solid #2563eb;
-          border-radius:10px;padding:1.1rem 1.4rem;background:rgba(37,99,235,.06)">
+        <div class="postdoc">
           <strong>Je recherche actuellement un post-doctorat.</strong>
           Je travaille sur l'explicabilité formelle et l'apprentissage automatique de confiance.
           Je serais heureux d'échanger avec des équipes travaillant sur les méthodes formelles
@@ -85,7 +84,7 @@ sections:
         {{< /news >}}
 
         {{< news date="Juil. 2026" star="true" >}}
-        Distinction **Gold Reviewer** pour **ICML 2026**.
+        Distinction **<span class="gold">Gold</span> Reviewer** pour **ICML 2026**.
         {{< /news >}}
 
         {{< news date="Juil. 2026" >}}

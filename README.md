@@ -49,6 +49,8 @@ They are defined in `layouts/_shortcodes/`, each with its parameters documented 
 
 All the styling lives in one place, `layouts/_partials/hooks/head-end/entry-styles.html`. Change a rule there and it applies to every page in both languages.
 
+Two classes are meant to be used from the content files: `postdoc` on the "looking for a post-doc" box (it was a long inline style duplicated in both homepages, where the copies could drift apart), and `gold` on the literal word *Gold* in a Gold Reviewer award — `**<span class="gold">Gold</span> Reviewer**` in a news item, or the same span inside a backtick-quoted `svc` title, since `svc` passes its title through `safeHTML`. Inline HTML survives in content because the theme's goldmark config sets `unsafe = true`.
+
 **Every page exists twice.** A change to `content/en/<page>.md` must be mirrored in `content/fr/<page>.md`, and a change to `data/authors/me.yaml` in `data/authors/me-fr.yaml`.
 
 ## Theme overrides in `layouts/`

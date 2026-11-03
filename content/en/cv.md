@@ -30,7 +30,7 @@ sections:
         {{< svc title="Top Reviewer" badge="NeurIPS 2026"
                 note="Awarded to reviewers recognised for the quality of their reviews" >}}
 
-        {{< svc title="Gold Reviewer" badge="ICML 2026"
+        {{< svc title=`<span class="gold">Gold</span> Reviewer` badge="ICML 2026"
                 note="Awarded to reviewers recognised for the quality of their reviews" >}}
 
         {{< svc title="Plan of Action for Cooperation in Europe (PACE)" badge="CEA 2026"
